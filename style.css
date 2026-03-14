@@ -1,74 +1,29 @@
-/* PHRINUSOMYIS MASTER STYLE - ZERO ERROR VERSION */
+/* Reset & basics */
+* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+body {background:#000; color:#fff; line-height:1.6;}
+a {color:inherit; text-decoration:none;}
+img {max-width:100%; height:auto; user-select:none; pointer-events:none;}
+video {width:100%; display:block; margin:20px 0;}
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-body { background: #000; color: #fff; overflow-x: hidden; }
+/* HEADER */
+header {position:fixed; top:0; width:100%; background:rgba(0,0,0,0.85); display:flex; justify-content:space-between; align-items:center; padding:10px 20px; z-index:1000;}
+header .logo {height:50px;}
+header nav a {margin:0 10px; font-weight:bold;}
 
-/* Header */
-header {
-    position: fixed; top: 0; width: 100%; height: 70px;
-    background: rgba(0,0,0,0.9); display: flex;
-    justify-content: space-between; align-items: center;
-    padding: 0 5%; z-index: 100; border-bottom: 1px solid #333;
-}
-header .logo { height: 40px; }
-header nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+/* SECTIONS */
+.section-text, .section-video, .section-luxury, .section-logo, .section-countdown, .section-countdown-digital, .section-countdown-cinematic {padding:120px 20px 60px; text-align:center;}
+.video-text {position:absolute; top:20%; left:50%; transform:translateX(-50%); color:gold; background: rgba(0,0,0,0.3); padding:20px; border-radius:10px;}
 
-/* Hero */
-.hero-section { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
-.hero-section h1 { font-size: 4rem; letter-spacing: 10px; }
-.hero-section p { letter-spacing: 5px; color: #888; }
+/* 360° Rotations */
+.logo-rotate, .perfume-rotate {animation:rotate360 10s linear infinite; display:block; margin:0 auto;}
 
-/* THE FIX: VIDEO CONTAINERS */
-.video-container {
-    position: relative; /* This keeps the text locked inside the video */
-    width: 100%;
-    height: 100vh; /* Full screen height for each video */
-    overflow: hidden;
-    background: #000;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Makes video fill the screen perfectly */
-    filter: brightness(0.6);
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* This centers the text exactly */
-    text-align: center;
-    width: 80%;
-}
-
-.gold-text {
-    color: #FFD700;
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
-}
-
-/* Assets (Logo/Perfume) */
-.asset-section { padding: 100px 0; text-align: center; background: #050505; }
-.rotating-asset {
-    width: 300px;
-    margin-top: 50px;
-    animation: spin 15s linear infinite;
-}
-
-@keyframes spin {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
-}
+/* Social */
+.section-social {padding:60px 20px; text-align:center;}
+.section-social .social-icons a {margin:0 10px; display:inline-block; width:50px; height:50px;}
+.section-social img {width:100%; height:100%; filter: brightness(0) invert(1);}
 
 /* Footer */
-footer { padding: 50px; text-align: center; border-top: 1px solid #222; color: #444; }
+footer {padding:40px 20px; text-align:center; background:#111; color:#aaa;}
 
-/* Mobile Adjustment */
-@media (max-width: 768px) {
-    .gold-text { font-size: 1.5rem; }
-    .hero-section h1 { font-size: 2rem; }
-}
+/* Animations */
+@keyframes rotate360 {0%{transform:rotateY(0deg);}100%{transform:rotateY(360deg);}}

@@ -110,36 +110,4 @@
             <img src="phrinusomyis_twitter.png" style="width: 40px; margin: 0 10px;">
         </div>
         <p style="color: #FFD700; font-size: 12px; opacity: 0.7;">© 2026 PHRINUSOMYIS – ALL RIGHTS RESERVED</p>
-    </footer>pt>
-        const target = new Date("May 29, 2026 00:00:00").getTime();
-        const rainColors = [['#FF0000', '#0000FF'], ['#FFA500', '#008000'], ['#FFFF00', '#800080'], ['#FF69B4', '#00FFFF'], ['#FF00FF', '#00FF00'], ['#4B0082', '#008080'], ['#EE82EE', '#800000'], ['#FFD700', '#000080']];
-        const digiColors = ["#FF0000", "#0000FF", "#008000", "#FFFF00", "#FFA500", "#800080", "#00FFFF", "#FF00FF"];
-
-        function update() {
-            const now = new Date().getTime();
-            const gap = target - now;
-            const d = Math.floor(gap / 86400000).toString().padStart(2, '0');
-            const h = Math.floor((gap % 86400000) / 3600000).toString().padStart(2, '0');
-            const m = Math.floor((gap % 3600000) / 60000).toString().padStart(2, '0');
-            const s = Math.floor((gap % 60000) / 1000).toString().padStart(2, '0');
-            const fullStr = d + h + m + s;
-
-            document.getElementById('timer1').innerText = `${d} : ${h} : ${m} : ${s}`;
-            
-            let rainHTML = "";
-            fullStr.split('').forEach((char, i) => {
-                rainHTML += `<span class="rainbow-digit" style="background-image: linear-gradient(to bottom, ${rainColors[i][0]} 50%, ${rainColors[i][1]} 50%)">${char}</span>`;
-            });
-            document.getElementById('timer3').innerHTML = rainHTML;
-
-            let digiHTML = "";
-            fullStr.split('').forEach((char, i) => {
-                digiHTML += `<span style="color: ${digiColors[i]}">${char}</span>`;
-            });
-            document.getElementById('timer2').innerHTML = digiHTML;
-        }
-        setInterval(update, 1000);
-        update();
-    </script>
-</body>
-</html>
+    </footer>

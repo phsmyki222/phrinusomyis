@@ -1,29 +1,229 @@
-/* Reset & basics */
-* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
-body {background:#000; color:#fff; line-height:1.6;}
-a {color:inherit; text-decoration:none;}
-img {max-width:100%; height:auto; user-select:none; pointer-events:none;}
-video {width:100%; display:block; margin:20px 0;}
+/* ========================
+   GLOBAL STYLES
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* HEADER */
-header {position:fixed; top:0; width:100%; background:rgba(0,0,0,0.85); display:flex; justify-content:space-between; align-items:center; padding:10px 20px; z-index:1000;}
-header .logo {height:50px;}
-header nav a {margin:0 10px; font-weight:bold;}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Dark background for luxury feel */
+  color: #FFD700; /* Default gold text */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-/* SECTIONS */
-.section-text, .section-video, .section-luxury, .section-logo, .section-countdown, .section-countdown-digital, .section-countdown-cinematic {padding:120px 20px 60px; text-align:center;}
-.video-text {position:absolute; top:20%; left:50%; transform:translateX(-50%); color:gold; background: rgba(0,0,0,0.3); padding:20px; border-radius:10px;}
+h1, h2 {
+  color: #FFD700;
+  text-align: center;
+}
 
-/* 360° Rotations */
-.logo-rotate, .perfume-rotate {animation:rotate360 10s linear infinite; display:block; margin:0 auto;}
+p {
+  color: #FFD700;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+}
 
-/* Social */
-.section-social {padding:60px 20px; text-align:center;}
-.section-social .social-icons a {margin:0 10px; display:inline-block; width:50px; height:50px;}
-.section-social img {width:100%; height:100%; filter: brightness(0) invert(1);}
+/* ========================
+   HEADER / MENU
+======================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.8);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-/* Footer */
-footer {padding:40px 20px; text-align:center; background:#111; color:#aaa;}
+header .logo img {
+  height: 100px; /* Larger logo for visibility */
+}
 
-/* Animations */
-@keyframes rotate360 {0%{transform:rotateY(0deg);}100%{transform:rotateY(360deg);}}
+header .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ========================
+   SECTIONS
+======================== */
+section {
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+}
+
+/* ========================
+   VIDEO SECTIONS
+======================== */
+section video {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* OVERLAY TEXT ON VIDEOS */
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFD700;
+  text-align: center;
+  width: 90%;
+}
+
+.overlay-text h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.overlay-text p {
+  font-size: 20px;
+}
+
+/* ========================
+   360° IMAGES
+======================== */
+#logo360 img, #luxury img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* ========================
+   COUNTDOWN TIMERS
+======================== */
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Gold countdown */
+#countdown1 .timer {
+  font-size: 50px;
+  color: #FFD700;
+}
+
+/* Digital countdown */
+#countdown2 .timer {
+  font-size: 45px;
+  color: #00FFFF; /* Placeholder, JS will fill multi-color */
+}
+
+/* Rainbow dual-color countdown */
+#countdown3 .timer {
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ========================
+   CONTACT & SOCIAL
+======================== */
+#contact a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 0;
+}
+
+#social-media img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #FFD700;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* ========================
+   HIDE CEO METADATA
+======================== */
+#ceo-meta {
+  display: none;
+}
+
+/* ========================
+   RIGHT CLICK DISABLE
+======================== */
+img, video {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none; /* disables drag/drop */
+}
+
+header .menu ul li a {
+  pointer-events: auto; /* menu links still clickable */
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header .logo img {
+    height: 70px;
+  }
+  .overlay-text h2 {
+    font-size: 28px;
+  }
+  .overlay-text p {
+    font-size: 16px;
+  }
+  #countdown1 .timer {
+    font-size: 36px;
+  }
+  #countdown2 .timer {
+    font-size: 32px;
+  }
+  #countdown3 .timer {
+    font-size: 38px;
+  }
+  #social-media img {
+    height: 40px;
+  }
+}

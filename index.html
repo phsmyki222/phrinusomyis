@@ -1,247 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHRINUSOMYIS | Commanding the World Stage</title>
+    
+    <meta name="description" content="PHRINUSOMYIS: World-class stadium experiences and global productions.">
+    <meta name="author" content="Victor Seth A">
+    <link rel="icon" href="phrinusomyis_logo.png" type="image/png">
 
-<title>PHRINUSOMYIS – Commanding the World Stage</title>
+    <style>
+        /* --- SOVEREIGN DESIGN SYSTEM --- */
+        :root { --gold: #FFD700; --black: #000000; --white: #ffffff; }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            background-color: var(--black); 
+            color: var(--gold); 
+            font-family: 'Times New Roman', serif; 
+            overflow-x: hidden; 
+            line-height: 1.6;
+        }
 
-<!-- SEO Metadata -->
-<meta name="description" content="PHRINUSOMYIS is world-class stadium experiences, global productions, and unforgettable moments. Audiences worldwide witness unmatched precision, luxury, and authority in elite entertainment.">
+        /* Glass Header */
+        header {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
 
-<meta name="keywords" content="PHRINUSOMYIS, stadium experiences, global productions, luxury events, elite entertainment, Victor Seth A, CEO, immersive shows">
+        .logo-img { height: 70px; filter: drop-shadow(0 0 5px var(--gold)); }
 
-<meta name="author" content="Victor Seth A">
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: var(--white); text-decoration: none; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; }
 
-<!-- Favicon -->
-<link rel="icon" href="phrinusomyis_logo.png" type="image/png">
+        /* Section Layouts */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+        }
 
-<!-- Open Graph -->
-<meta property="og:title" content="PHRINUSOMYIS – Commanding the World Stage">
+        .v-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
 
-<meta property="og:description" content="PHRINUSOMYIS is world-class stadium experiences, global productions, and unforgettable moments.">
+        .overlay-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border: 1px solid var(--gold);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
 
-<meta property="og:image" content="phrinusomyis_logo.png">
+        h1, h2, h3 { text-transform: uppercase; letter-spacing: 5px; margin-bottom: 20px; }
 
-<meta property="og:type" content="website">
+        /* Timer Engine Styles */
+        .timer { font-weight: bold; margin: 20px 0; letter-spacing: 5px; }
+        #timer1 { font-size: 50px; color: var(--gold); }
+        #timer2 { font-size: 45px; font-family: 'Courier New', monospace; }
+        #timer3 { font-size: 65px; font-weight: 900; }
+        
+        .rainbow-digit { 
+            display: inline-block; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
 
-<meta property="og:url" content="https://www.PHRINUSOMYIS.com">
+        /* 360 Rotation */
+        .rotate-360 {
+            height: 250px;
+            margin: 40px 0;
+            animation: spinY 15s linear infinite;
+            filter: drop-shadow(0 0 20px var(--gold));
+        }
 
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
+        @keyframes spinY {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
 
+        /* Contact & Socials */
+        #contact a {
+            color: var(--gold);
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .social-row img {
+            width: 45px;
+            margin: 15px;
+            transition: 0.3s;
+            filter: grayscale(1) brightness(2);
+        }
+        .social-row img:hover { filter: grayscale(0) brightness(1); transform: scale(1.1); }
+
+        footer { padding: 50px; opacity: 0.6; font-size: 12px; letter-spacing: 2px; }
+    </style>
 </head>
-
 <body>
 
-<header id="header">
-
-<div class="logo">
-<img src="phrinusomyis_logo.png" alt="PHRINUSOMYIS Logo">
-</div>
-
-<nav class="menu">
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#elite-experience">Elite Experience</a></li>
-
-<li><a href="#phrinusomyis">PHRINUSOMYIS</a></li>
-
-<li><a href="#luxury">Luxury Creations</a></li>
-
-<li><a href="#countdown1">Countdown</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-<section id="home">
-
-<h1>PHRINUSOMYIS – Commanding the World Stage</h1>
-
-<p>
-PHRINUSOMYIS is world-class stadium experiences, powerful global productions, and unforgettable moments. Every performance, every spectacle, every venue reflects unmatched precision, luxury, and authority.
-</p>
-
-</section>
-
-
-<section id="countdown1">
-
-<h2>Countdown to the Next Extraordinary Event</h2>
-
-<div class="timer" id="timer1"></div>
-
-</section>
-
-
-<section id="video1">
-
-<video controls muted autoplay loop>
-
-<source src="phrinusomyis_stadium_outside_elite.mp4" type="video/mp4">
-
-</video>
-
-<div class="overlay-text">
-
-<h2>PHRINUSOMYIS Elite Stadium Experience</h2>
-
-<p>Every seat, every moment, and every performance is crafted for unparalleled comfort.</p>
-
-</div>
-
-</section>
-
-
-<section id="video2">
-
-<video controls muted autoplay loop>
-
-<source src="phrinusomyis_stadium_inside_elite.mp4" type="video/mp4">
-
-</video>
-
-<div class="overlay-text">
-
-<h2>PHRINUSOMYIS World-Class Production</h2>
-
-<p>Transforming stadiums into iconic arenas of music, light, and spectacle.</p>
-
-</div>
-
-</section>
-
-
-<section id="logo360">
-
-<h2>PHRINUSOMYIS Emblem</h2>
-
-<img src="phrinusomyis_logo_360.png" alt="PHRINUSOMYIS 360 Logo">
-
-</section>
-
-
-<section id="countdown3">
-
-<h2>Prepare for the Next Elite Experience</h2>
-
-<div class="timer" id="timer3"></div>
-
-</section>
-
-
-<section id="video3">
-
-<video controls muted autoplay loop>
-
-<source src="phrinusomyis_stadium_elite.mp4" type="video/mp4">
-
-</video>
-
-<div class="overlay-text">
-
-<h2>PHRINUSOMYIS Iconic Venue Experience</h2>
-
-<p>Precision, luxury, and mastery define every showcase.</p>
-
-</div>
-
-</section>
-
-
-<section id="countdown2">
-
-<h2>Countdown to the Global Production Reveal</h2>
-
-<div class="timer" id="timer2"></div>
-
-</section>
-
-
-<section id="luxury">
-
-<h2>PHRINUSOMYIS Luxury & Elite Creations</h2>
-
-<p>Exclusive luxury items reflecting elegance and sophistication.</p>
-
-<img src="phrinusomyis_perfume_front.png" alt="PHRINUSOMYIS Perfume">
-
-</section>
-
-
-<section id="concert">
-
-<video controls muted autoplay loop>
-
-<source src="phrinusomyis_concert.mp4" type="video/mp4">
-
-</video>
-
-<div class="overlay-text">
-
-<h2>PHRINUSOMYIS Concert Showcase</h2>
-
-<p>International superstars performing at iconic venues.</p>
-
-</div>
-
-</section>
-
-
-<section id="phrinusomyis">
-
-<p>
-PHRINUSOMYIS elite productions captivate audiences with immersive sound, visionary lighting, and masterful staging.
-</p>
-
-</section>
-
-
-<section id="contact">
-
-<h2>Contact PHRINUSOMYIS</h2>
-
-<a href="mailto:info@PHRINUSOMYIS.com">info@PHRINUSOMYIS.com</a>
-
-</section>
-
-
-<section id="social-media">
-
-<img src="phrinusomyis_youtube.png" alt="YouTube">
-
-<img src="phrinusomyis_tiktok.png" alt="TikTok">
-
-<img src="phrinusomyis_instagram.png" alt="Instagram">
-
-<img src="phrinusomyis_facebook.png" alt="Facebook">
-
-<img src="phrinusomyis_twitter.png" alt="Twitter">
-
-</section>
-
-
-<footer>
-
-<p>Copyright 2026 PHRINUSOMYIS – All Rights Reserved</p>
-
-</footer>
-
-
-<div id="ceo-meta" style="display:none;">
-Victor Seth A – CEO & Founder of PHRINUSOMYIS
-</div>
-
-<script src="script.js"></script>
-
+    <header>
+        <div class="logo"><img src="phrinusomyis_logo.png" class="logo-img"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#luxury">Luxury</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="overlay-box">
+            <h1>PHRINUSOMYIS</h1>
+            <h3>Commanding the World Stage</h3>
+            <p>Unmatched precision, luxury, and authority in elite entertainment.</p>
+        </div>
+    </section>
+
+    <section>
+        <video src="phrinusomyis_stadium_outside_elite.mp4" class="v-bg" autoplay muted loop playsinline></video>
+        <div class="overlay-box">
+            <h2>The Exterior Vision</h2>
+            <div class="timer" id="timer1">00 : 00 : 00 : 00</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>PHRINUSOMYIS Emblem</h2>
+        <img src="phrinusomyis_logo_360.png" class="rotate-360">
+    </section>
+
+    <section>
+        <video src="phrinusomyis_stadium_inside_elite.mp4" class="v-bg" autoplay muted loop playsinline></video>
+        <div class="overlay-box">
+            <h2>Elite Interior Design</h2>
+            <div class="timer" id="timer3"></div>
+        </div>
+    </section>
+
+    <section>
+        <video src="phrinusomyis_stadium_elite.mp4" class="v-bg" autoplay muted loop playsinline></video>
+        <div class="overlay-box">
+            <h2>Iconic Venue Mastery</h2>
+            <p>Every venue reflects unmatched precision.</p>
+        </div>
+    </section>
+
+    <section id="luxury">
+        <div class="overlay-box">
+            <h2>Luxury Creations</h2>
+            <img src="phrinusomyis_perfume_front.png" class="rotate-360">
+            <div class="timer" id="timer2"></div>
+        </div>
+    </section>
+
+    <section>
+        <video src="phrinusomyis_concert.mp4" class="v-bg" autoplay muted loop playsinline></video>
+        <div class="overlay-box">
+            <h2>Concert Showcase</h2>
+            <p>International superstars on the PHRINUSOMYIS stage.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="overlay-box">
+            <h2>Connect with Authority</h2>
+            <a href="mailto:info@PHRINUSOMYIS.com">info@PHRINUSOMYIS.com</a>
+            <div class="social-row" style="margin-top: 30px;">
+                <img src="phrinusomyis_youtube.png">
+                <img src="phrinusomyis_tiktok.png">
+                <img src="phrinusomyis_instagram.png">
+                <img src="phrinusomyis_facebook.png">
+                <img src="phrinusomyis_twitter.png">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 PHRINUSOMYIS – ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script>
+        const targetDate = new Date("May 29, 2026 00:00:00").getTime();
+        const rainColors = [['#FF0000', '#0000FF'], ['#FFA500', '#008000'], ['#FFFF00', '#800080'], ['#FF69B4', '#00FFFF'], ['#FF00FF', '#00FF00'], ['#4B0082', '#008080'], ['#EE82EE', '#800000'], ['#FFD700', '#000080']];
+        const digiColors = ["#FF0000", "#0000FF", "#008000", "#FFFF00", "#FFA500", "#800080", "#00FFFF", "#FF00FF"];
+
+        function updateTimers() {
+            const now = new Date().getTime();
+            const gap = targetDate - now;
+
+            const d = Math.floor(gap / 86400000).toString().padStart(2, '0');
+            const h = Math.floor((gap % 86400000) / 3600000).toString().padStart(2, '0');
+            const m = Math.floor((gap % 3600000) / 60000).toString().padStart(2, '0');
+            const s = Math.floor((gap % 60000) / 1000).toString().padStart(2, '0');
+            const fullStr = d + h + m + s;
+
+            // Timer 1: Standard Gold
+            document.getElementById('timer1').innerText = `${d} : ${h} : ${m} : ${s}`;
+
+            // Timer 3: Rainbow Split
+            let rainHTML = "";
+            fullStr.split('').forEach((char, i) => {
+                rainHTML += `<span class="rainbow-digit" style="background-image: linear-gradient(to bottom, ${rainColors[i % 8][0]} 50%, ${rainColors[i % 8][1]} 50%)">${char}</span>`;
+            });
+            document.getElementById('timer3').innerHTML = rainHTML;
+
+            // Timer 2: Digital Colors
+            let digiHTML = "";
+            fullStr.split('').forEach((char, i) => {
+                digiHTML += `<span style="color: ${digiColors[i % 8]}">${char}</span>`;
+            });
+            document.getElementById('timer2').innerHTML = digiHTML;
+        }
+
+        setInterval(updateTimers, 1000);
+        updateTimers();
+    </script>
 </body>
 </html>

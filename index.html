@@ -9,13 +9,137 @@
     <meta name="author" content="Victor Seth A">
     <link rel="icon" href="phrinusomyis_logo.png" type="image/png">
 
-    </head>
-<body oncontextmenu="return false;"> <header>
-        <img src="phrinusomyis_logo.png" class="logo" alt="PHRINUSOMYIS Logo">
+    <style>
+        /* --- CSS DESIGN --- */
+        :root {
+            --gold: #FFD700;
+            --black: #050505;
+            --white: #ffffff;
+            --glass: rgba(0, 0, 0, 0.9);
+            --transition: 0.4s ease-in-out;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'Times New Roman', serif;
+            overflow-x: hidden;
+            user-select: none; /* Prevents text selection for elite feel */
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            z-index: 2000;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .logo { height: 65px; width: auto; }
+
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+        nav a:hover { color: var(--gold); text-shadow: 0 0 10px var(--gold); }
+
+        /* SECTIONS */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        .content-block { max-width: 900px; z-index: 10; margin-bottom: 40px; }
+
+        h1, h2, h3 { color: var(--gold); text-transform: uppercase; letter-spacing: 6px; margin-bottom: 20px; }
+        h1 { font-size: 3.5rem; }
+        p { line-height: 1.8; font-size: 1.1rem; color: #ccc; margin-bottom: 20px; }
+
+        .gold-text { color: var(--gold); font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
+
+        /* VIDEO HANDLING */
+        .video-container {
+            width: 100%;
+            height: 70vh;
+            position: relative;
+            margin: 40px 0;
+            overflow: hidden;
+            border-top: 1px solid var(--gold);
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .v-bg { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5); }
+
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            pointer-events: none;
+        }
+
+        /* 360 ROTATIONS */
+        .rotate-360 {
+            height: 350px;
+            width: auto;
+            display: block;
+            margin: 40px auto;
+            animation: spin 20s linear infinite;
+            filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.3));
+        }
+
+        @keyframes spin { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
+
+        /* TIMERS */
+        .timer-unit { margin: 30px 0; font-weight: bold; letter-spacing: 4px; }
+        .gold-digits { font-size: 4rem; color: var(--gold); text-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+        .rainbow-digit { display: inline-block; -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0 5px; font-size: 5rem; }
+        .digital-multi { font-family: monospace; font-size: 3.5rem; }
+
+        /* FOOTER */
+        footer { padding: 100px 20px; background: #000; border-top: 1px solid #222; text-align: center;}
+        .social-icon { width: 40px; margin: 0 15px; filter: grayscale(1) invert(1); transition: var(--transition); cursor: pointer; }
+        .social-icon:hover { filter: grayscale(0) invert(0); transform: translateY(-5px); }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            nav { display: none; }
+            h1 { font-size: 2.2rem; }
+            .gold-digits, .rainbow-digit, .digital-multi { font-size: 1.8rem; }
+            .rotate-360 { height: 220px; }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+    <header>
+        <img src="phrinusomyis_logo.png" class="logo" alt="PHRINUSOMYIS">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#brief">Elite Experience</a></li>
+                <li><a href="#stadium-outside">Elite Experience</a></li>
                 <li><a href="#logo-showcase">PHRINUSOMYIS</a></li>
                 <li><a href="#luxury">Luxury</a></li>
                 <li><a href="#reveal-section">Countdown</a></li>
@@ -30,21 +154,19 @@
             <div class="content-block">
                 <h1>PHRINUSOMYIS</h1>
                 <p class="gold-text">COMMANDING THE WORLD STAGE</p>
-                <p>PHRINUSOMYIS produces stadium shows and elite entertainment experiences worldwide. Precision, luxury, and mastery define every performance. Audiences witness excellence at every event.</p>
+                <p>PHRINUSOMYIS produces stadium shows and elite entertainment experiences worldwide. Precision, luxury, and mastery define every performance.</p>
             </div>
         </section>
 
         <section id="countdown-gold">
-            <div class="overlay">
+            <div class="content-block">
                 <h2>Global Experience Begins In</h2>
                 <div id="timer1" class="timer-unit gold-digits">00 : 00 : 00 : 00</div>
             </div>
         </section>
 
         <section id="stadium-outside">
-            <div class="pre-video-text">
-                <p>Fireworks surround the stadium, creating an atmosphere of excitement. Every detail is designed for awe and luxury. Experience the grandeur that only PHRINUSOMYIS can deliver.</p>
-            </div>
+            <p class="content-block">Fireworks surround the stadium, creating an atmosphere of excitement. Every detail is designed for awe and luxury. Experience the grandeur that only PHRINUSOMYIS can deliver.</p>
             <div class="video-container">
                 <video src="phrinusomyis_stadium_outside_elite.mp4" class="v-bg" autoplay muted loop playsinline></video>
                 <div class="video-overlay">
@@ -53,7 +175,7 @@
             </div>
         </section>
 
-        <section id="authority">
+        <section>
             <div class="content-block">
                 <p>Every PHRINUSOMYIS production is engineered to inspire awe. From stage design to lighting, every detail showcases unmatched expertise.</p>
             </div>
@@ -61,15 +183,13 @@
 
         <section id="logo-showcase">
             <div class="content-block">
-                <img src="phrinusomyis_logo_360.png" class="rotate-360" alt="PHRINUSOMYIS Emblem">
+                <img src="phrinusomyis_logo_360.png" class="rotate-360" alt="PHRINUSOMYIS">
                 <p>The PHRINUSOMYIS emblem represents global entertainment mastery.</p>
             </div>
         </section>
 
         <section id="stadium-inside">
-            <div class="pre-video-text">
-                <p>Step inside the stadium and feel the energy build. Every corner is crafted for maximum audience engagement. PHRINUSOMYIS transforms spaces into unforgettable experiences.</p>
-            </div>
+            <p class="content-block">Step inside the stadium and feel the energy build. Every corner is crafted for maximum audience engagement. PHRINUSOMYIS transforms spaces into unforgettable experiences.</p>
             <div class="video-container">
                 <video src="phrinusomyis_stadium_inside_elite.mp4" class="v-bg" autoplay muted loop playsinline></video>
                 <div class="video-overlay">
@@ -79,9 +199,9 @@
         </section>
 
         <section id="countdown-rainbow">
-            <div class="overlay">
+            <div class="content-block">
                 <h2>Prepare for the Next Elite Experience</h2>
-                <div id="timer3" class="timer-unit rainbow-style"></div>
+                <div id="timer3" class="timer-unit"></div>
             </div>
         </section>
 
@@ -93,16 +213,14 @@
         </section>
 
         <section id="reveal-section">
-            <div class="overlay">
+            <div class="content-block">
                 <h2>Artists and Stadium Location Revealed Soon</h2>
                 <div id="timer2" class="timer-unit digital-multi"></div>
             </div>
         </section>
 
         <section id="stadium-view">
-            <div class="pre-video-text">
-                <p>Witness a venue transformed into a stage of legends. PHRINUSOMYIS creates iconic spaces where every performance is a masterpiece.</p>
-            </div>
+            <p class="content-block">Witness a venue transformed into a stage of legends. PHRINUSOMYIS creates iconic spaces where every performance is a masterpiece.</p>
             <div class="video-container">
                 <video src="phrinusomyis_stadium_elite.mp4" class="v-bg" autoplay muted loop playsinline></video>
                 <div class="video-overlay">
@@ -112,9 +230,7 @@
         </section>
 
         <section id="concert">
-            <div class="pre-video-text">
-                <p>Experience global superstars performing in unmatched stadiums. Every show is designed for full engagement, luxury, and lifelong memories.</p>
-            </div>
+            <p class="content-block">Experience global superstars performing in unmatched stadiums. Every show is designed for full engagement, luxury, and lifelong memories.</p>
             <div class="video-container">
                 <video src="phrinusomyis_concert.mp4" class="v-bg" autoplay muted loop playsinline></video>
                 <div class="video-overlay">
@@ -123,31 +239,69 @@
             </div>
         </section>
 
-        <section id="identity">
+        <section>
             <div class="content-block">
-                <p>PHRINUSOMYIS elite productions captivate audiences with immersive sound, visionary lighting, and masterful staging. Every performance is engineered to create awe, excitement, and lifelong memories. PHRINUSOMYIS excellence in entertainment worldwide.</p>
+                <p>PHRINUSOMYIS elite productions captivate audiences with immersive sound, visionary lighting, and masterful staging. Excellence in entertainment worldwide.</p>
             </div>
         </section>
     </main>
 
     <footer id="contact">
         <h2>Contact PHRINUSOMYIS</h2>
-        <p><a href="mailto:info@PHRINUSOMYIS.com" class="email-link">info@PHRINUSOMYIS.com</a></p>
+        <p><a href="mailto:info@PHRINUSOMYIS.com" style="color:var(--gold); font-size: 1.5rem; text-decoration:none;">info@PHRINUSOMYIS.com</a></p>
         
-        <div class="social-icons">
-            <img src="phrinusomyis_facebook.png" class="social-icon" alt="Facebook">
-            <img src="phrinusomyis_instagram.png" class="social-icon" alt="Instagram">
-            <img src="phrinusomyis_youtube.png" class="social-icon" alt="YouTube">
-            <img src="phrinusomyis_tiktok.png" class="social-icon" alt="TikTok">
-            <img src="phrinusomyis_twitter.png" class="social-icon" alt="Twitter">
+        <div class="social-icons" style="margin: 40px 0;">
+            <img src="phrinusomyis_facebook.png" class="social-icon" alt="FB">
+            <img src="phrinusomyis_instagram.png" class="social-icon" alt="IG">
+            <img src="phrinusomyis_youtube.png" class="social-icon" alt="YT">
+            <img src="phrinusomyis_tiktok.png" class="social-icon" alt="TK">
+            <img src="phrinusomyis_twitter.png" class="social-icon" alt="TW">
         </div>
         
-        <p class="copyright">Copyright 2026 PHRINUSOMYIS – All Rights Reserved</p>
-
-        <div id="ceo-meta" style="display:none;" aria-hidden="true">
-            CEO & Founder: Victor Seth A
-        </div>
+        <p style="opacity:0.4; font-size:0.8rem;">Copyright 2026 PHRINUSOMYIS – All Rights Reserved</p>
+        <div style="display:none">Victor Seth A - CEO & Founder</div>
     </footer>
 
+    <script>
+        /* --- JAVASCRIPT LOGIC --- */
+        const targetDate = new Date("May 29, 2026 00:00:00").getTime();
+        const rainColors = [['#FFD700', '#B8860B'], ['#FFFFFF', '#FFD700'], ['#FF0000', '#8B0000'], ['#0000FF', '#00008B']];
+        const digitalColors = ["#FFD700", "#FF0000", "#00FF00", "#00FFFF", "#FFFFFF", "#FFA500"];
+
+        function update() {
+            const now = new Date().getTime();
+            const gap = targetDate - now;
+            
+            const d = Math.floor(gap / 86400000).toString().padStart(2, '0');
+            const h = Math.floor((gap % 86400000) / 3600000).toString().padStart(2, '0');
+            const m = Math.floor((gap % 3600000) / 60000).toString().padStart(2, '0');
+            const s = Math.floor((gap % 60000) / 1000).toString().padStart(2, '0');
+            const fullStr = d + h + m + s;
+
+            // Timer 1
+            document.getElementById('timer1').innerText = `${d} : ${h} : ${m} : ${s}`;
+
+            // Timer 3 Rainbow
+            let rainHTML = "";
+            fullStr.split('').forEach((char, i) => {
+                const colors = rainColors[i % rainColors.length];
+                rainHTML += `<span class="rainbow-digit" style="background-image: linear-gradient(to bottom, ${colors[0]} 50%, ${colors[1]} 50%)">${char}</span>`;
+                if (i === 1 || i === 3 || i === 5) rainHTML += " : ";
+            });
+            document.getElementById('timer3').innerHTML = rainHTML;
+
+            // Timer 2 Digital
+            let digiHTML = "";
+            fullStr.split('').forEach((char, i) => {
+                const color = digitalColors[i % digitalColors.length];
+                digiHTML += `<span style="color: ${color}">${char}</span>`;
+                if (i === 1 || i === 3 || i === 5) digiHTML += " : ";
+            });
+            document.getElementById('timer2').innerHTML = digiHTML;
+        }
+
+        setInterval(update, 1000);
+        update();
+    </script>
 </body>
 </html>

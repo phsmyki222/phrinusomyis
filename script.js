@@ -1,83 +1,104 @@
 /**
  * PHRINUSOMYIS Official Terminal Logic
- * Target Launch: May 1, 2026
+ * Target Launch: May 29, 2026
+ * Functionality: Precision Countdowns, Orbit Protection, & Cinematic Transitions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Set the Target Date (May 2026)
-    const launchDate = new Date("May 1, 2026 00:00:00").getTime();
+    // 1. LOCKED TARGET DATE: MAY 29, 2026
+    const launchDate = new Date("May 29, 2026 00:00:00").getTime();
 
+    /**
+     * Update all three distinct countdown systems
+     */
     function updateAllCountdowns() {
         const now = new Date().getTime();
         const distance = launchDate - now;
 
-        // Time calculations
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for Days, Hours, Minutes, and Seconds
+        const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Map to the different IDs in your HTML
+        // Standard string formatting (adds a leading zero if number is below 10)
         const timeData = {
-            d: days.toString().padStart(2, '0'),
-            h: hours.toString().padStart(2, '0'),
-            m: minutes.toString().padStart(2, '0'),
-            s: seconds.toString().padStart(2, '0')
+            days: d.toString().padStart(2, '0'),
+            hours: h.toString().padStart(2, '0'),
+            minutes: m.toString().padStart(2, '0'),
+            seconds: s.toString().padStart(2, '0')
         };
 
-        // Update Countdown 1 (Gold)
-        updateElement('d1', timeData.d);
-        updateElement('h1', timeData.h);
-        updateElement('m1', timeData.m);
-        updateElement('s1', timeData.s);
+        // Update Countdown 1 (GOLD)
+        updateTimerSet('1', timeData);
 
-        // Update Countdown 2 (Multi-color)
-        updateElement('d2', timeData.d);
-        updateElement('h2', timeData.h);
-        updateElement('m2', timeData.m);
-        updateElement('s2', timeData.s);
+        // Update Countdown 2 (MULTI-COLOR)
+        updateTimerSet('2', timeData);
 
-        // Update Countdown 3 (Rainbow)
-        updateElement('d3', timeData.d);
-        updateElement('h3', timeData.h);
-        updateElement('m3', timeData.m);
-        updateElement('s3', timeData.s);
+        // Update Countdown 3 (RAINBOW)
+        updateTimerSet('3', timeData);
 
-        // If the countdown is finished
+        // Handle Launch Expiration
         if (distance < 0) {
             clearInterval(timerInterval);
-            document.querySelectorAll('.timer-display').forEach(el => {
-                el.innerHTML = "EVENT LIVE";
+            document.querySelectorAll('.timer-grid').forEach(el => {
+                el.innerHTML = "<h2 class='gold-title'>LAUNCHED</h2>";
             });
         }
     }
 
-    function updateElement(id, value) {
-        const el = document.getElementById(id);
-        if (el) el.innerText = value;
+    /**
+     * Helper to update specific timer HTML elements
+     */
+    function updateTimerSet(suffix, data) {
+        const dEl = document.getElementById(`d${suffix}`);
+        const hEl = document.getElementById(`h${suffix}`);
+        const mEl = document.getElementById(`m${suffix}`);
+        const sEl = document.getElementById(`s${suffix}`);
+
+        if (dEl) dEl.innerText = data.days;
+        if (hEl) hEl.innerText = data.hours;
+        if (mEl) mEl.innerText = data.minutes;
+        if (sEl) sEl.innerText = data.seconds;
     }
 
-    // Run every second
+    // Initialize Interval (Runs every 1 second)
     const timerInterval = setInterval(updateAllCountdowns, 1000);
-    updateAllCountdowns(); // Initial call
+    updateAllCountdowns(); // Run immediately on load
 
-    // 2. Global Security: Disable Right-Click on Media
+    /**
+     * GLOBAL SECURITY & PROTECTION
+     * Disables right-click on all premium media assets
+     */
     document.addEventListener('contextmenu', (e) => {
         if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') {
             e.preventDefault();
         }
     }, false);
 
-    // 3. Smooth Scroll for Navigation
+    /**
+     * SMOOTH SCROLLING
+     * Ensures high-end movement when using the menu
+     */
     document.querySelectorAll('.nav-menu a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const section = document.querySelector(this.getAttribute('href'));
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith("#")) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     });
 
+    /**
+     * ASSET PROTECTION
+     * Prevents users from dragging images (like the 360° assets)
+     */
+    document.querySelectorAll('img, video').forEach(asset => {
+        asset.addEventListener('dragstart', (e) => e.preventDefault());
+    });
 });

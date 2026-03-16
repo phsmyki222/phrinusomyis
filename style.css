@@ -1,222 +1,214 @@
-/* 1. CORE VARIABLES & RESET */
+/* PHRINUSOMYIS MASTER STYLE SHEET
+    AESTHETIC: 12K ULTRA-HIGH DEFINITION / PURE GOLD 
+*/
+
 :root {
-    --gold: #FFD700;
-    --deep-gold: #B8860B;
-    --black: #050505;
-    --white: #ffffff;
-    --glass: rgba(0, 0, 0, 0.85);
-    --transition: 0.4s ease-in-out;
+    /* 12K Pure Gold Gradient - Multi-stop for high-end shimmer */
+    --pure-gold: linear-gradient(
+        45deg, 
+        #8A6E2F 0%, 
+        #C5A059 20%, 
+        #FFD700 40%, 
+        #FDFFD9 50%, 
+        #FFD700 60%, 
+        #C5A059 80%, 
+        #8A6E2F 100%
+    );
+    --solid-gold: #D4AF37;
+    --deep-black: #050505;
+    --glass-bg: rgba(0, 0, 0, 0.85);
 }
 
+/* Global Reset & 12K Clarity */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    background-color: var(--black);
-    color: var(--white);
-    font-family: 'Times New Roman', serif; /* Authority font */
-    line-height: 1.6;
+    background-color: var(--deep-black);
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
     overflow-x: hidden;
 }
 
-/* 2. HEADER & NAVIGATION (FIXING THE MENU) */
-header {
+/* 1. STICKY MENU - Neo-Regal Design */
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px); /* Premium glass effect */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--glass);
-    backdrop-filter: blur(15px);
-    z-index: 2000;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-}
-
-.logo {
-    height: 65px;
-    width: auto;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+    padding: 20px 6%;
+    z-index: 10000;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 nav a {
+    color: #FFFFFF;
     text-decoration: none;
-    color: var(--white);
+    margin-left: 30px;
+    font-weight: 600;
     font-size: 0.85rem;
-    letter-spacing: 2px;
     text-transform: uppercase;
-    transition: var(--transition);
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--gold);
-    text-shadow: 0 0 10px var(--gold);
+    color: var(--solid-gold);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
-/* 3. SECTION LAYOUTS */
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 120px 20px;
+/* Gold Text Logic (Pure Gold Overlay) */
+.gold-overlay-text {
+    background: var(--pure-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* 2. HERO & SECTIONS */
+.content-section {
+    padding: 100px 10%;
     text-align: center;
 }
 
-.content-block {
-    max-width: 900px;
-    z-index: 10;
+.content-section h1 {
+    font-size: clamp(2rem, 5vw, 4rem); /* Fluid sizing for 12K feel */
+    margin-bottom: 30px;
 }
 
-h1, h2, h3 {
-    color: var(--gold);
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-}
-
-h1 { font-size: 3.5rem; }
-h2 { font-size: 2rem; }
-
-.gold-text {
-    color: var(--gold);
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-/* 4. VIDEO CINEMATICS */
-.video-container {
-    width: 100%;
-    height: 80vh;
+/* VIDEO MASTER SETTINGS */
+.video-box {
     position: relative;
-    margin: 40px 0;
-    overflow: hidden;
-    border-top: 1px solid var(--gold);
-    border-bottom: 1px solid var(--gold);
-}
-
-.v-bg {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
+    max-width: 1100px;
+    margin: 40px auto;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.9);
+    overflow: hidden;
 }
 
-.video-overlay {
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.9) contrast(1.1); /* Cinema color grading */
+}
+
+/* Gold Video Overlay Label */
+.video-label {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 80%;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    z-index: 10;
+    pointer-events: none;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.8);
 }
 
-.pre-video-text {
-    max-width: 700px;
-    margin: 20px auto;
-    font-style: italic;
-    color: #ccc;
-    font-size: 1.2rem;
-}
-
-/* 5. 360° ROTATIONS (SCATTERED) */
+/* 3. 360° ROTATION ANIMATION */
 .rotate-360 {
-    height: 350px;
-    width: auto;
-    display: block;
+    width: 100%;
+    max-width: 400px;
     margin: 40px auto;
-    animation: spin 20s linear infinite;
-    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.3));
+    display: block;
+    animation: gold-glow-rotation 15s infinite linear;
 }
 
-@keyframes spin {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
+@keyframes gold-glow-rotation {
+    from { transform: rotateY(0deg); filter: drop-shadow(0 0 5px var(--solid-gold)); }
+    50% { filter: drop-shadow(0 0 25px var(--solid-gold)); }
+    to { transform: rotateY(360deg); filter: drop-shadow(0 0 5px var(--solid-gold)); }
 }
 
-/* 6. COUNTDOWN STYLING */
-.timer-unit {
+/* 4. COUNTDOWN DISPLAYS */
+.timer-display {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+    font-weight: 800;
     margin: 30px 0;
-    font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 0.2em;
 }
 
-.gold-digits {
-    font-size: 4rem;
-    color: var(--gold);
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-}
-
-.rainbow-style {
-    font-size: 5rem;
-}
-
-.rainbow-digit {
-    display: inline-block;
+.rainbow-text {
+    background: linear-gradient(
+        to right, 
+        #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 0 5px;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
 }
 
-.digital-multi {
-    font-family: 'Courier New', monospace;
-    font-size: 3.5rem;
-}
-
-/* 7. FOOTER & SOCIALS */
-footer {
-    padding: 100px 20px;
-    background: #000;
-    border-top: 1px solid #222;
-}
-
-.email-link {
-    color: var(--gold);
-    font-size: 1.5rem;
+/* 5. CONTACT & SOCIAL */
+#contact a {
+    color: var(--solid-gold);
     text-decoration: none;
-    transition: var(--transition);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--solid-gold);
+    padding-bottom: 5px;
+    transition: 0.4s;
 }
 
-.social-icons {
-    margin: 40px 0;
+#contact a:hover {
+    color: #fff;
+    border-color: #fff;
 }
 
-.social-icon {
-    width: 40px;
-    margin: 0 15px;
+.social-icons img {
+    width: 45px;
     filter: grayscale(1) invert(1);
-    transition: var(--transition);
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.social-icon:hover {
+.social-icons img:hover {
     filter: grayscale(0) invert(0);
-    transform: translateY(-5px);
+    transform: scale(1.2);
 }
 
-.copyright {
-    font-size: 0.8rem;
-    opacity: 0.5;
-    margin-top: 20px;
-}
-
-/* 8. MOBILE OPTIMIZATION */
+/* 6. MOBILE RESPONSIVENESS (BLUEPRINT COMPLIANT) */
 @media (max-width: 768px) {
-    header { height: 80px; }
-    nav { display: none; } /* Standard for elite mobile landing pages */
-    h1 { font-size: 2rem; }
-    .gold-digits { font-size: 2rem; }
-    .rotate-360 { height: 200px; }
+    header.sticky-header {
+        padding: 15px 4%;
+        flex-direction: column;
+    }
+    
+    nav {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.7rem;
+    }
+
+    .content-section {
+        padding: 50px 5%;
+    }
+
+    .video-label {
+        width: 95%;
+    }
+}
+
+/* 7. GLOBAL SECURITY */
+img, video {
+    user-select: none;
+    -webkit-user-drag: none;
 }

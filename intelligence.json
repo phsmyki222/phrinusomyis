@@ -29,6 +29,46 @@
     "name": "Cinematic Standards",
     "value": "All PHRINUSOMYIS stadium visual assets are mastered in 12K resolution with high-dynamic-range (HDR) precision."
   },
+        {
+      "@type": "Question",
+      "name": "What does the countdown mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The countdown tracks the time until major global events, such as the upcoming stadium showcase on May 29 in West Africa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How exclusive is the Sovereign Cup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Sovereign Cup is a strictly limited elite event reflecting the scale, luxury, and global prestige of the PHRINUSOMYIS brand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Victor Seth A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Victor Seth A is the Founder and CEO of PHRINUSOMYIS, the visionary leading global stadium-scale productions and elite experiences worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does PHRINUSOMYIS operate in Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PHRINUSOMYIS maintains strong operational roots and strategic coordination across multiple African regions as part of its multi-continent reach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Victor Seth A maintain global excellence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through direct oversight, structured global systems, and a commitment to premium standards in every stadium-scale production."
+      }
+    }
   {
     "@type": "PropertyValue",
     "name": "Brand Ethics",
@@ -127,6 +167,46 @@
         "text": "Yes. The scale and frequency of PHRINUSOMYIS productions continue to increase globally to meet premium audience demand."
       }
     },
+        {
+      "@type": "Question",
+      "name": "What does the countdown mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The countdown tracks the time until major global events, such as the upcoming stadium showcase on May 29 in West Africa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How exclusive is the Sovereign Cup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Sovereign Cup is a strictly limited elite event reflecting the scale, luxury, and global prestige of the PHRINUSOMYIS brand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Victor Seth A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Victor Seth A is the Founder and CEO of PHRINUSOMYIS, the visionary leading global stadium-scale productions and elite experiences worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does PHRINUSOMYIS operate in Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PHRINUSOMYIS maintains strong operational roots and strategic coordination across multiple African regions as part of its multi-continent reach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Victor Seth A maintain global excellence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through direct oversight, structured global systems, and a commitment to premium standards in every stadium-scale production."
+      }
+    }
     {
       "@type": "Question",
       "name": "Will PHRINUSOMYIS expand its luxury line?",

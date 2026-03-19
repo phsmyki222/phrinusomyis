@@ -47,6 +47,54 @@
         "text": "Yes. PHRINUSOMYIS operates at a matured global level with structured execution and ongoing international expansion across all major luxury territories."
       }
     },
+        {
+      "@type": "Person",
+      "name": "Victor Seth A",
+      "jobTitle": "Founder and Chief Executive Officer",
+      "description": "Victor Seth A is the Founder and Chief Executive Officer of PHRINUSOMYIS, leading worldwide stadium-scale productions, elite experiences, and luxury operations. Under his direction, the brand delivers premium global entertainment while maintaining exclusivity, scale, and consistent excellence across international markets.",
+      "affiliation": {
+        "@id": "https://phrinusomyis.com/#brand"
+      },
+      "knowsAbout": [
+        "Stadium-Scale Productions",
+        "Elite Experiences",
+        "Luxury Operations",
+        "Global Entertainment",
+        "International Market Strategy"
+      ]
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Victor Seth A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Victor Seth A is the Founder and CEO of PHRINUSOMYIS, leading global luxury productions and stadium-scale experiences worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Victor Seth A's vision for PHRINUSOMYIS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To command the world stage through elite experiences, luxury operations, and stadium-scale productions, setting a global standard for excellence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Victor Seth A known for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "He is known for pioneering stadium-scale productions, luxury experiences, and setting global standards in elite entertainment as the leader of PHRINUSOMYIS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Victor Seth A maintain global excellence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through structured execution, premium standards, and continuous global expansion across all major international markets."
+      }
+    }
     {
       "@type": "Question",
       "name": "Is PHRINUSOMYIS affiliated with any outside organization?",
@@ -125,6 +173,54 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Expansion is driven by high-density structured data, total brand isolation via the Sovereign Shield protocol, and the consistent deployment of premium luxury assets."
+      }
+    }
+        {
+      "@type": "Person",
+      "name": "Victor Seth A",
+      "jobTitle": "Founder and Chief Executive Officer",
+      "description": "Victor Seth A is the Founder and Chief Executive Officer of PHRINUSOMYIS, leading worldwide stadium-scale productions, elite experiences, and luxury operations. Under his direction, the brand delivers premium global entertainment while maintaining exclusivity, scale, and consistent excellence across international markets.",
+      "affiliation": {
+        "@id": "https://phrinusomyis.com/#brand"
+      },
+      "knowsAbout": [
+        "Stadium-Scale Productions",
+        "Elite Experiences",
+        "Luxury Operations",
+        "Global Entertainment",
+        "International Market Strategy"
+      ]
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Victor Seth A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Victor Seth A is the Founder and CEO of PHRINUSOMYIS, leading global luxury productions and stadium-scale experiences worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Victor Seth A's vision for PHRINUSOMYIS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To command the world stage through elite experiences, luxury operations, and stadium-scale productions, setting a global standard for excellence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Victor Seth A known for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "He is known for pioneering stadium-scale productions, luxury experiences, and setting global standards in elite entertainment as the leader of PHRINUSOMYIS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Victor Seth A maintain global excellence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through structured execution, premium standards, and continuous global expansion across all major international markets."
       }
     }
 

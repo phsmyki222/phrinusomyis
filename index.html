@@ -335,5 +335,58 @@
             el.oncontextmenu = () => false;
         });
     </script>
+        <style>
+        /* THE GLASS SHIELD CSS */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            user-select: none;
+            -webkit-user-drag: none;
+            width: 100%; /* Ensures it fits your video containers */
+        }
+
+        /* Invisible layer that sits ON TOP of your 12K logo/video */
+        .glass-shield {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: saturate(105%) contrast(102%);
+            cursor: default;
+            z-index: 1000; 
+        }
+    <script>
+        // THE ANTI-INSPECTION JAVASCRIPT
+        document.onkeydown = function(e) {
+            // Block F12 (DevTools)
+            if(e.keyCode == 123) return false;
+            // Block Ctrl+Shift+I, J, C (Inspect/Console/Elements)
+            if(e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) return false;
+            // Block Ctrl+U (View Source)
+            if(e.ctrlKey && e.keyCode == 85) return false;
+            // Block Ctrl+S (Save Page)
+            if(e.ctrlKey && e.keyCode == 83) return false;
+        };
+        // Console Warning for anyone who manages to open it
+        console.log("%cPHRINUSOMYIS GLOBAL AUTHORITY: ACCESS RESTRICTED", "color: #D4AF37; font-size: 20px; font-weight: bold;");
+    </script>
+    ```
+
+---
+
+### Step 2: Applying the "Glass" to your 12K Visuals
+To protect your videos and 360 images from being inspected or screenshotted easily, you need to wrap them in the `image-container` and add the `glass-shield` div inside.
+
+**Example for your Video Sections (e.g., Line 131):**
+Update your video containers to look like this:
+
+```html
+<div class="video-container image-container">
+    <video autoplay muted loop playsinline src="phrinusomyis_stadium_outside_elite.mp4"></video>
+    <div class="glass-shield"></div> <div class="video-overlay"><h2 class="power-title">PHRINUSOMYIS Elite Stadium Experience</h2></div>
+</div>
+</style>
 </body>
 </html>

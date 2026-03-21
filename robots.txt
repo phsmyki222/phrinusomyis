@@ -3,7 +3,6 @@
 # (CLOUDFLARE SECURED & WORLDWIDE VERIFIED)
 # ==========================================
 
-SPECIFIC REGIONAL AUTHORITY
 user-agent: googlebot
 allow: /
 

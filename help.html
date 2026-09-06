@@ -1,703 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HELP CENTER | PHRINUSOMYIS GLOBAL</title>
-<meta name="title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
-<meta name="description" content="Access the PHRINUSOMYIS Global Support Division. Search our archives for account access, security protocols, product verification, and international tour operations.">
-<meta name="keywords" content="PHRINUSOMYIS Help, Support Division, Account Recovery, Product Verification, Stadium Access, Security Protocols, Brooklyn Archives">
-<meta name="author" content="PHRINUSOMYIS GLOBAL">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://phrinusomyiS.com/help">
-<meta property="og:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
-<meta property="og:description" content="Global Command Support. Search our operational archives and security layers for assistance.">
-<meta property="og:image" content="https://phrinusomyiS.com/phrinusomyiS_logo.png">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
-<meta property="twitter:description" content="Operational assistance for the PHRINUSOMYIS global network.">
-<meta name="theme-color" content="#050505">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HelpPage",
-  "name": "Help Center | PHRINUSOMYIS GLOBAL",
-  "description": "Official Global Support Division and knowledge archives for PHRINUSOMYIS. Access account support, product verification, and international operational guidance.",
-  "url": "https://phrinusomyiS.com/help",
-  "publisher": {
-    "@type": "Organization",
-    "name": "PHRINUSOMYIS GLOBAL",
-    "logo": "https://phrinusomyiS.com/phrinusomyiS_logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "info@phrinusomyiS.com",
-      "contactType": "Priority Support",
-      "availableLanguage": "Global"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP CENTER | PHRINUSOMYIS GLOBAL</title>
+    <meta name="description" content="PHRINUSOMYIS Help Center — Global information, support and assistance.">
+    <meta name="keywords" content="PHRINUSOMYIS, Help Center, Support, Global Support, Customer Support">
+    <meta property="og:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
+    <meta property="og:description" content="PHRINUSOMYIS Global Help Center.">
+    <meta property="og:image" content="https://phrinusomyis.com/phrinusomyis_logo.png">
+    <meta property="og:url" content="https://phrinusomyis.com/help.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
+    <meta name="twitter:description" content="PHRINUSOMYIS Global Help Center.">
+    <meta name="twitter:image" content="https://phrinusomyis.com/phrinusomyis_logo.png">
+    <meta name="theme-color" content="#050505">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HelpPage",
+        "name": "PHRINUSOMYIS Help Center",
+        "url": "https://phrinusomyis.com/help.html",
+        "description": "PHRINUSOMYIS Global Help Center.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PHRINUSOMYIS",
+            "url": "https://phrinusomyis.com"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "info@phrinusomyis.com"
+        }
     }
-  }
-}
-</script>
-
-<style>
-
-:root {
-    --gold: #D4AF37;
-    --obsidian: #050505;
-    --border: #1a1a1a;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-/* HEADER */
-
-.help-header {
-    padding: 120px 20px 80px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-    background: linear-gradient(to bottom, #0a0a0a, #000);
-}
-
-.help-logo {
-    width: 80px;
-    margin-bottom: 25px;
-    opacity: 0.95;
-}
-
-.help-header h1 {
-    font-size: 24px;
-    letter-spacing: 15px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.help-status {
-    color: var(--gold);
-    font-size: 10px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-top: 25px;
-    display: block;
-}
-
-/* SEARCH */
-
-.search-wrap {
-    max-width: 600px;
-    margin: -30px auto 0;
-    padding: 0 20px;
-}
-
-.search-bar {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--obsidian);
-    border: 1px solid var(--gold);
-    padding: 20px 30px;
-    color: #fff;
-    font-size: 14px;
-    letter-spacing: 2px;
-    outline: none;
-    text-transform: uppercase;
-}
-
-#searchResults {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 0 20px;
-    display: none;
-}
-
-#resultBox {
-    border: 1px solid #1a1a1a;
-    background: #050505;
-    padding: 35px;
-    color: #777;
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-/* CONTAINER */
-
-.help-container {
-    max-width: 1100px;
-    margin: 100px auto;
-    padding: 0 20px 150px;
-}
-
-/* GRID */
-
-.help-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-/* CARD */
-
-.help-card {
-    background-color: #050505;
-    border: 1px solid var(--border);
-    padding: 50px 40px;
-    transition: all 0.4s ease;
-    cursor: pointer;
-}
-
-.help-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-5px);
-}
-
-.help-card h3 {
-    font-size: 14px;
-    letter-spacing: 3px;
-    color: var(--gold);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.help-card p {
-    color: #555;
-    font-size: 13px;
-    margin: 0;
-}
-
-/* SUPPORT */
-
-.escalation-zone {
-    margin-top: 100px;
-    padding: 60px;
-    border: 1px solid #111;
-    text-align: center;
-    background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
-}
-
-.escalation-zone h2 {
-    font-size: 16px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.escalation-zone p {
-    color: #444;
-    font-size: 13px;
-}
-
-.contact-btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 40px;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    text-decoration: none;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    transition: all 0.3s;
-}
-
-.contact-btn:hover {
-    background-color: var(--gold);
-    color: #000;
-}
-
-/* FOOTER */
-
-.phr-main-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 80px 20px 40px;
-    border-top: 1px solid #1a1a1a;
-}
-
-.phr-footer-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px 20px;
-    max-width: 1100px;
-    margin: 0 auto 60px;
-}
-
-@media (min-width: 768px) {
-    .phr-footer-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-.phr-footer-section h3 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
-
-.phr-footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.phr-footer-section li {
-    margin-bottom: 15px;
-}
-
-.phr-footer-section a {
-    color: #888;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.phr-footer-section a:hover {
-    color: #D4AF37;
-}
-
-.phr-footer-bottom {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    text-align: center;
-    color: #777;
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-/* =========================================================
-   AI SUPPORT CHAT
-========================================================= */
-
-#phr-ai-button {
-    position: fixed;
-    right: 24px;
-    bottom: 24px;
-    z-index: 9998;
-    background: #D4AF37;
-    color: #000;
-    border: none;
-    padding: 15px 22px;
-    border-radius: 3px;
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    cursor: pointer;
-    box-shadow: 0 10px 35px rgba(0,0,0,.5);
-}
-
-#phr-ai-button:hover {
-    background: #fff;
-}
-
-/* CHAT WINDOW */
-
-#phr-ai-chat {
-    position: fixed;
-    right: 24px;
-    bottom: 82px;
-    width: 390px;
-    max-width: calc(100vw - 30px);
-    height: 570px;
-    max-height: calc(100vh - 105px);
-    background: #050505;
-    border: 1px solid #292929;
-    z-index: 9999;
-    display: none;
-    flex-direction: column;
-    box-shadow: 0 20px 70px rgba(0,0,0,.75);
-}
-
-.phr-ai-header {
-    padding: 18px 20px;
-    border-bottom: 1px solid #222;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.phr-ai-title {
-    color: #D4AF37;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.phr-ai-subtitle {
-    color: #555;
-    font-size: 9px;
-    margin-top: 4px;
-    letter-spacing: 1px;
-}
-
-#phr-ai-close {
-    background: none;
-    border: none;
-    color: #777;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-#phr-ai-close:hover {
-    color: #D4AF37;
-}
-
-/* CHAT MESSAGES */
-
-#phr-ai-messages {
-    flex: 1;
-    overflow-y: auto;
-    padding: 18px;
-}
-
-.phr-ai-message {
-    margin-bottom: 14px;
-    display: flex;
-}
-
-.phr-ai-message.user {
-    justify-content: flex-end;
-}
-
-.phr-ai-bubble {
-    max-width: 84%;
-    padding: 12px 14px;
-    font-size: 13px;
-    line-height: 1.55;
-    white-space: pre-wrap;
-}
-
-.phr-ai-message.bot .phr-ai-bubble {
-    background: #101010;
-    border: 1px solid #1d1d1d;
-    color: #ddd;
-}
-
-.phr-ai-message.user .phr-ai-bubble {
-    background: #D4AF37;
-    color: #000;
-}
-
-.phr-ai-message.typing .phr-ai-bubble {
-    color: #777;
-}
-
-/* QUICK BUTTONS */
-
-.phr-ai-quick {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    padding: 0 18px 12px;
-}
-
-.phr-ai-quick button {
-    background: transparent;
-    border: 1px solid #292929;
-    color: #aaa;
-    padding: 8px 10px;
-    font-size: 9px;
-    letter-spacing: .8px;
-    cursor: pointer;
-}
-
-.phr-ai-quick button:hover {
-    border-color: #D4AF37;
-    color: #D4AF37;
-}
-
-/* INPUT */
-
-.phr-ai-input-area {
-    border-top: 1px solid #222;
-    padding: 12px;
-    display: flex;
-    gap: 8px;
-}
-
-#phr-ai-input {
-    flex: 1;
-    min-width: 0;
-    resize: none;
-    height: 42px;
-    box-sizing: border-box;
-    background: #0b0b0b;
-    border: 1px solid #252525;
-    color: #fff;
-    padding: 11px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    outline: none;
-}
-
-#phr-ai-input:focus {
-    border-color: #D4AF37;
-}
-
-#phr-ai-send {
-    width: 65px;
-    border: 1px solid #D4AF37;
-    background: #D4AF37;
-    color: #000;
-    font-size: 9px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-/* AGENT FORM */
-
-#phr-agent-form {
-    display: none;
-    padding: 18px;
-    border-top: 1px solid #222;
-    background: #070707;
-}
-
-.phr-agent-title {
-    color: #D4AF37;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.phr-agent-text {
-    color: #777;
-    font-size: 11px;
-    line-height: 1.5;
-    margin-bottom: 13px;
-}
-
-.phr-agent-input,
-#phr-agent-message {
-    width: 100%;
-    box-sizing: border-box;
-    background: #0b0b0b;
-    border: 1px solid #252525;
-    color: #fff;
-    padding: 11px;
-    margin-bottom: 9px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    outline: none;
-}
-
-#phr-agent-message {
-    height: 75px;
-    resize: vertical;
-}
-
-.phr-agent-input:focus,
-#phr-agent-message:focus {
-    border-color: #D4AF37;
-}
-
-#phr-agent-submit {
-    width: 100%;
-    padding: 12px;
-    background: #D4AF37;
-    border: none;
-    color: #000;
-    font-weight: 900;
-    font-size: 10px;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-#phr-agent-submit:hover {
-    background: #fff;
-}
-
-.phr-agent-status {
-    display: none;
-    color: #D4AF37;
-    font-size: 11px;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    .help-header {
-        padding: 80px 20px 65px;
-    }
-
-    .help-header h1 {
-        font-size: 20px;
-        letter-spacing: 8px;
-    }
-
-    .help-container {
-        margin-top: 70px;
-    }
-
-    .escalation-zone {
-        padding: 40px 20px;
-    }
-
-    #phr-ai-button {
-        right: 15px;
-        bottom: 15px;
-    }
-
-    #phr-ai-chat {
-        right: 15px;
-        bottom: 72px;
-        width: calc(100vw - 30px);
-        height: 580px;
-    }
-}
-
-</style>
-
+    </script>
+
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --obsidian: #050505;
+            --black: #000000;
+            --white: #ffffff;
+            --muted: #a5a5a5;
+            --border: #1a1a1a;
+            --card: #0b0b0b;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--obsidian);
+            color: var(--white);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea {
+            font: inherit;
+        }
+
+        /* HEADER */
+
+        header {
+            border-bottom: 1px solid var(--border);
+            background: #050505;
+            padding: 18px 5%;
+        }
+
+        .header-inner {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            color: var(--gold);
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .brand-title {
+            color: #aaa;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .status {
+            color: var(--gold);
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1250px;
+            margin: auto;
+            padding: 70px 5% 100px;
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 55px;
+        }
+
+        .hero h1 {
+            margin: 0 0 15px;
+            font-size: clamp(34px, 5vw, 58px);
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        /* SEARCH */
+
+        .search-wrap {
+            max-width: 850px;
+            margin: 0 auto 45px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #272727;
+            background: #0a0a0a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 18px 20px;
+            background: transparent;
+            border: 0;
+            outline: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .search-box input::placeholder {
+            color: #777;
+        }
+
+        .search-results {
+            display: none;
+            margin-top: 10px;
+            border: 1px solid var(--border);
+            background: #090909;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .search-result {
+            display: block;
+            padding: 15px 18px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .search-result:last-child {
+            border-bottom: 0;
+        }
+
+        .search-result strong {
+            display: block;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+
+        .search-result span {
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* HELP GRID */
+
+        .section-title {
+            margin-bottom: 25px;
+        }
+
+        .section-title h2 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .section-title p {
+            color: #888;
+            margin: 7px 0 0;
+        }
+
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 70px;
+        }
+
+        .help-card {
+            min-height: 180px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            border-radius: 8px;
+            transition: .2s ease;
+        }
+
+        .help-card:hover {
+            border-color: #444;
+            transform: translateY(-2px);
+        }
+
+        .help-card h3 {
+            margin: 0 0 10px;
+            color: var(--gold);
+            font-size: 17px;
+        }
+
+        .help-card p {
+            color: #999;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* PRIORITY SUPPORT */
+
+        .priority {
+            border: 1px solid var(--border);
+            padding: 35px;
+            background: #080808;
+            border-radius: 8px;
+            margin-bottom: 70px;
+        }
+
+        .priority h2 {
+            margin: 0 0 10px;
+        }
+
+        .priority p {
+            color: #999;
+            margin: 0 0 20px;
+        }
+
+        .mail-link {
+            color: var(--gold);
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 60px 5% 30px;
+            background: #030303;
+        }
+
+        .footer-grid {
+            max-width: 1250px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 35px;
+        }
+
+        .footer-column h3 {
+            font-size: 12px;
+            color: var(--gold);
+            letter-spacing: 2px;
+            margin: 0 0 15px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 9px;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .copyright {
+            max-width: 1250px;
+            margin: 50px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: #555;
+            font-size: 12px;
+        }
+
+        /* AI CHAT BUTTON */
+
+        #aiChatButton {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 9998;
+            border: 1px solid var(--gold);
+            background: #050505;
+            color: var(--gold);
+            padding: 14px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            box-shadow: 0 10px 35px rgba(0,0,0,.5);
+        }
+
+        #aiChatButton:hover {
+            background: var(--gold);
+            color: black;
+        }
+
+        /* CHAT WINDOW */
+
+        #aiChatWindow {
+            position: fixed;
+            right: 24px;
+            bottom: 85px;
+            width: min(430px, calc(100vw - 30px));
+            height: min(650px, calc(100vh - 110px));
+            background: #080808;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            z-index: 9999;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 20px 70px rgba(0,0,0,.7);
+        }
+
+        .chat-header {
+            padding: 16px 18px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #050505;
+        }
+
+        .chat-header img {
+            width: 38px;
+            height: 38px;
+            object-fit: contain;
+        }
+
+        .chat-header-info {
+            flex: 1;
+        }
+
+        .chat-header-info strong {
+            display: block;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .chat-header-info span {
+            display: block;
+            color: #777;
+            font-size: 11px;
+            margin-top: 2px;
+        }
+
+        #closeChat {
+            background: none;
+            border: 0;
+            color: #888;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+        #closeChat:hover {
+            color: white;
+        }
+
+        /* CHAT MESSAGES */
+
+        #chatMessages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-bubble {
+            max-width: 85%;
+            padding: 12px 14px;
+            border-radius: 9px;
+            font-size: 14px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .message.bot .message-bubble {
+            background: #111;
+            border: 1px solid #202020;
+            color: #ddd;
+        }
+
+        .message.user .message-bubble {
+            background: var(--gold);
+            color: #050505;
+        }
+
+        /* CHAT INPUT */
+
+        .chat-input-area {
+            border-top: 1px solid var(--border);
+            padding: 12px;
+            background: #050505;
+        }
+
+        .chat-input-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        #chatInput {
+            flex: 1;
+            min-width: 0;
+            resize: none;
+            min-height: 45px;
+            max-height: 110px;
+            padding: 12px;
+            background: #0d0d0d;
+            border: 1px solid #242424;
+            border-radius: 7px;
+            color: white;
+            outline: none;
+        }
+
+        #chatInput:focus {
+            border-color: #444;
+        }
+
+        #sendChat {
+            width: 48px;
+            border: 1px solid var(--gold);
+            background: var(--gold);
+            color: #000;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #sendChat:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+        .typing {
+            color: #777;
+            font-size: 12px;
+            padding: 0 5px 10px;
+            display: none;
+        }
+
+        /* AGENT FORM */
+
+        #agentFormBox {
+            display: none;
+            padding: 18px;
+            border-top: 1px solid var(--border);
+            background: #090909;
+            max-height: 70%;
+            overflow-y: auto;
+        }
+
+        #agentFormBox h3 {
+            margin: 0 0 7px;
+            color: var(--gold);
+            font-size: 16px;
+        }
+
+        #agentFormBox p {
+            margin: 0 0 15px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .agent-field {
+            margin-bottom: 10px;
+        }
+
+        .agent-field label {
+            display: block;
+            color: #aaa;
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+
+        .agent-field input,
+        .agent-field textarea {
+            width: 100%;
+            padding: 10px;
+            background: #050505;
+            border: 1px solid #242424;
+            color: white;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .agent-field textarea {
+            min-height: 85px;
+            resize: vertical;
+        }
+
+        #agentSubmit {
+            width: 100%;
+            padding: 11px;
+            background: var(--gold);
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .agent-status {
+            margin-top: 10px;
+            font-size: 12px;
+            display: none;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+            .help-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding-top: 45px;
+            }
+
+            .header-inner {
+                align-items: flex-start;
+            }
+
+            .status {
+                display: none;
+            }
+
+            .help-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #aiChatWindow {
+                right: 10px;
+                bottom: 80px;
+                width: calc(100vw - 20px);
+                height: calc(100vh - 100px);
+            }
+
+            #aiChatButton {
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<header>
+    <div class="header-inner">
 
-<header class="help-header">
+        <div class="brand">
+            <img src="phrinusomyis_logo.png" alt="PHRINUSOMYIS">
 
-    <img
-        src="phrinusomyiS_logo.png"
-        class="help-logo"
-        alt="PHRINUSOMYIS"
-    >
-
-    <h1>Help Center</h1>
-
-    <span class="help-status">
-        Global Support Services — Active
-    </span>
-
-</header>
-
-
-<!-- SEARCH -->
-
-<div class="search-wrap">
-
-    <input
-        type="text"
-        class="search-bar"
-        placeholder="Search Help Topics"
-        autocomplete="off"
-    >
-
-</div>
-
-
-<div id="searchResults">
-
-    <div id="resultBox"></div>
-
-</div>
-
-
-<!-- MAIN -->
-
-<main class="help-container">
-
-    <div class="help-grid">
-
-        <div class="help-card">
-            <h3>Account Access</h3>
-            <p>
-                Help with login, recovery, identity verification,
-                and account control systems.
-            </p>
+            <div class="brand-text">
+                <div class="brand-name">PHRINUSOMYIS</div>
+                <div class="brand-title">HELP CENTER</div>
+            </div>
         </div>
 
-        <div class="help-card">
-            <h3>Product Verification</h3>
-            <p>
-                Verify registered products, authenticity systems,
-                and operational purchase records.
-            </p>
-        </div>
-
-        <div class="help-card">
-            <h3>Global Venue Access</h3>
-            <p>
-                International stadium entry systems, venue authorization,
-                seating guidance, and operational access support.
-            </p>
-        </div>
-
-        <div class="help-card">
-            <h3>International Tour Operations</h3>
-            <p>
-                Support for global tour schedules, regional event coordination,
-                live production logistics, and international operations.
-            </p>
-        </div>
-
-        <div class="help-card">
-            <h3>Security Operations</h3>
-            <p>
-                Access platform security systems, operational monitoring,
-                verification layers, and protection protocols.
-            </p>
-        </div>
-
-        <div class="help-card">
-            <h3>Privacy & Data Control</h3>
-            <p>
-                Manage privacy settings, operational cookies,
-                user rights, and data protection preferences.
-            </p>
-        </div>
-
-        <div class="help-card">
-            <h3>Media & Broadcast Network</h3>
-            <p>
-                Assistance for media teams, press systems,
-                broadcasting operations, and production coordination.
-            </p>
-        </div>
-
-        <div class="help-card">
-            <h3>Hospitality & VIP Services</h3>
-            <p>
-                Premium guest support, executive hospitality systems,
-                VIP access, and international experience services.
-            </p>
+        <div class="status">
+            GLOBAL SUPPORT SERVICES — ACTIVE
         </div>
 
     </div>
+</header>
 
 
-    <!-- PRIORITY SUPPORT -->
+<main>
 
-    <section class="escalation-zone">
+    <section class="hero">
+        <h1>Help Center</h1>
+        <p>
+            Find information about PHRINUSOMYIS and access global support.
+        </p>
+    </section>
+
+
+    <section class="search-wrap">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="siteSearch"
+                placeholder="Search the PHRINUSOMYIS website..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+
+    </section>
+
+
+    <section>
+
+        <div class="section-title">
+            <h2>Support</h2>
+            <p>Information and assistance across PHRINUSOMYIS services.</p>
+        </div>
+
+
+        <div class="help-grid">
+
+            <a class="help-card" href="contact.html">
+                <h3>Account Access</h3>
+                <p>
+                    Information about access, account questions and general assistance.
+                </p>
+            </a>
+
+            <a class="help-card" href="id.html">
+                <h3>Product Verification</h3>
+                <p>
+                    Information relating to verification and product-related enquiries.
+                </p>
+            </a>
+
+            <a class="help-card" href="events.html">
+                <h3>Global Venue Access</h3>
+                <p>
+                    Information relating to venues, events and access.
+                </p>
+            </a>
+
+            <a class="help-card" href="events.html">
+                <h3>International Tour Operations</h3>
+                <p>
+                    Information about international events and related operations.
+                </p>
+            </a>
+
+            <a class="help-card" href="security.html">
+                <h3>Security Operations</h3>
+                <p>
+                    Security information and reporting.
+                </p>
+            </a>
+
+            <a class="help-card" href="privacy.html">
+                <h3>Privacy & Data Control</h3>
+                <p>
+                    Privacy information and data-related requests.
+                </p>
+            </a>
+
+            <a class="help-card" href="press.html">
+                <h3>Media & Broadcast Network</h3>
+                <p>
+                    Information for media, press and broadcast enquiries.
+                </p>
+            </a>
+
+            <a class="help-card" href="contact.html">
+                <h3>Hospitality & VIP Services</h3>
+                <p>
+                    Contact the PHRINUSOMYIS team regarding hospitality and VIP enquiries.
+                </p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="priority">
 
         <h2>Priority Support</h2>
 
         <p>
-            For urgent operational support from HQ team.
+            For direct enquiries, you can contact the PHRINUSOMYIS team.
         </p>
 
         <a
-            href="mailto:info@phrinusomyiS.com"
-            class="contact-btn"
+            class="mail-link"
+            href="mailto:info@phrinusomyis.com"
         >
-            Contact Support
+            info@phrinusomyis.com
         </a>
 
     </section>
@@ -705,316 +759,178 @@ html {
 </main>
 
 
-<!-- FOOTER -->
+<footer>
 
-<footer class="phr-main-footer">
+    <div class="footer-grid">
 
-    <div class="phr-footer-grid">
-
-        <div class="phr-footer-section">
-
+        <div class="footer-column">
             <h3>LUXURY</h3>
-
-            <ul>
-
-                <li>
-                    <a href="luxury">
-                        Luxury Identity
-                    </a>
-                </li>
-
-                <li>
-                    <a href="circle">
-                        Private Access
-                    </a>
-                </li>
-
-                <li>
-                    <a href="perfume">
-                        Perfumes
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
+            <a href="luxury.html">Luxury</a>
+            <a href="circle.html">Circle</a>
+            <a href="perfume.html">Perfume</a>
+            <a href="contact.html">Contact</a>
         </div>
 
-
-        <div class="phr-footer-section">
-
+        <div class="footer-column">
             <h3>M3AN</h3>
-
-            <ul>
-
-                <li>
-                    <a href="news">
-                        Latest News
-                    </a>
-                </li>
-
-                <li>
-                    <a href="press">
-                        Press Release
-                    </a>
-                </li>
-
-                <li>
-                    <a href="events">
-                        Events
-                    </a>
-                </li>
-
-                <li>
-                    <a href="luxury">
-                        PHRINUSOMYIS Luxury
-                    </a>
-                </li>
-
-            </ul>
-
+            <a href="news.html">News</a>
+            <a href="press.html">Press</a>
+            <a href="events.html">Events</a>
+            <a href="luxury.html">Luxury</a>
         </div>
 
-
-        <div class="phr-footer-section">
-
+        <div class="footer-column">
             <h3>ABOUT</h3>
-
-            <ul>
-
-                <li>
-                    <a href="policy">
-                        Privacy Policy
-                    </a>
-                </li>
-
-                <li>
-                    <a href="copyright">
-                        Copyright
-                    </a>
-                </li>
-
-                <li>
-                    <a href="terms">
-                        Terms of Use
-                    </a>
-                </li>
-
-                <li>
-                    <a href="privacy">
-                        Privacy Choices
-                    </a>
-                </li>
-
-            </ul>
-
+            <a href="policy.html">Policy</a>
+            <a href="copyright.html">Copyright</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
         </div>
 
-
-        <div class="phr-footer-section">
-
+        <div class="footer-column">
             <h3>HELP</h3>
-
-            <ul>
-
-                <li>
-                    <a href="security">
-                        Security
-                    </a>
-                </li>
-
-                <li>
-                    <a href="help">
-                        Help Center
-                    </a>
-                </li>
-
-                <li>
-                    <a href="cookies">
-                        Cookie Policy
-                    </a>
-                </li>
-
-                <li>
-                    <a href="close">
-                        Closed Captions
-                    </a>
-                </li>
-
-            </ul>
-
+            <a href="security.html">Security</a>
+            <a href="help.html">Help Center</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="close.html">Close</a>
         </div>
 
     </div>
 
-
-    <div class="phr-footer-bottom">
-
-        © 2026 PHRINUSOMYIS — Official Global Support Division.
-        All Rights Reserved.
-
+    <div class="copyright">
+        © PHRINUSOMYIS. All rights reserved.
     </div>
 
 </footer>
 
 
-<!-- =========================================================
-     AI SUPPORT BUTTON
-========================================================= -->
+<!-- ========================================================= -->
+<!-- PHRINUSOMYIS AI SUPPORT CHATBOT -->
+<!-- ========================================================= -->
 
-<button id="phr-ai-button">
+<button id="aiChatButton" type="button">
     AI SUPPORT
 </button>
 
 
-<!-- =========================================================
-     AI SUPPORT CHAT
-========================================================= -->
+<div id="aiChatWindow">
 
-<div id="phr-ai-chat">
+    <div class="chat-header">
 
-    <div class="phr-ai-header">
+        <img
+            src="phrinusomyis_logo.png"
+            alt="PHRINUSOMYIS"
+        >
 
-        <div>
-
-            <div class="phr-ai-title">
-                PHRINUSOMYIS SUPPORT
-            </div>
-
-            <div class="phr-ai-subtitle">
-                GLOBAL INFORMATION ASSISTANT
-            </div>
-
+        <div class="chat-header-info">
+            <strong>PHRINUSOMYIS</strong>
+            <span>GLOBAL INFORMATION ASSISTANT</span>
         </div>
 
-        <button id="phr-ai-close">
+        <button id="closeChat" type="button" aria-label="Close">
             ×
         </button>
 
     </div>
 
 
-    <div id="phr-ai-messages">
+    <div id="chatMessages">
 
-        <div class="phr-ai-message bot">
+        <div class="message bot">
+            <div class="message-bubble">
+                Welcome to PHRINUSOMYIS. How can I help you today?
+            </div>
+        </div>
 
-            <div class="phr-ai-bubble">
+    </div>
 
-                Hello. Welcome to PHRINUSOMYIS.
 
-                I can help you learn more about PHRINUSOMYIS,
-                ZEAVIQ SPORTS™, Sports Theater™, events,
-                operations, products, news, press information,
-                and other information published by the company.
+    <div id="typingIndicator" class="typing">
+        PHRINUSOMYIS is typing...
+    </div>
 
-                What would you like to know?
 
+    <!-- HUMAN SUPPORT FORM -->
+
+    <div id="agentFormBox">
+
+        <h3>Contact the PHRINUSOMYIS Team</h3>
+
+        <p>
+            Please send your name, email address and message.
+            Your request will be forwarded to our team at
+            info@phrinusomyis.com.
+        </p>
+
+        <form id="agentForm">
+
+            <div class="agent-field">
+                <label for="agentName">Name</label>
+
+                <input
+                    type="text"
+                    id="agentName"
+                    name="name"
+                    required
+                >
             </div>
 
-        </div>
+
+            <div class="agent-field">
+                <label for="agentEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="agentEmail"
+                    name="email"
+                    required
+                >
+            </div>
+
+
+            <div class="agent-field">
+                <label for="agentMessage">Message</label>
+
+                <textarea
+                    id="agentMessage"
+                    name="message"
+                    required
+                ></textarea>
+            </div>
+
+
+            <button id="agentSubmit" type="submit">
+                SEND MESSAGE
+            </button>
+
+            <div
+                id="agentStatus"
+                class="agent-status"
+            ></div>
+
+        </form>
 
     </div>
 
 
-    <!-- QUICK QUESTIONS -->
+    <div class="chat-input-area">
 
-    <div class="phr-ai-quick">
+        <div class="chat-input-row">
 
-        <button data-question="What is PHRINUSOMYIS?">
-            ABOUT PHRINUSOMYIS
-        </button>
+            <textarea
+                id="chatInput"
+                placeholder="Ask PHRINUSOMYIS..."
+                rows="1"
+            ></textarea>
 
-        <button data-question="What is ZEAVIQ SPORTS™?">
-            ZEAVIQ SPORTS
-        </button>
-
-        <button data-question="What is Sports Theater™?">
-            SPORTS THEATER
-        </button>
-
-        <button data-question="Tell me about the company's events and activities.">
-            EVENTS
-        </button>
-
-        <button data-question="I want to speak with an agent.">
-            SPEAK WITH AN AGENT
-        </button>
-
-    </div>
-
-
-    <!-- AGENT FORM -->
-
-    <div id="phr-agent-form">
-
-        <div class="phr-agent-title">
-            Connect With The Team
-        </div>
-
-        <div class="phr-agent-text">
-
-            Please send your name, email address and message.
-            Your request will be forwarded to the PHRINUSOMYIS team
-            at info@phrinusomyiS.com.
+            <button
+                id="sendChat"
+                type="button"
+            >
+                ↑
+            </button>
 
         </div>
-
-
-        <input
-            type="text"
-            id="phr-agent-name"
-            class="phr-agent-input"
-            placeholder="Your name"
-            autocomplete="name"
-        >
-
-
-        <input
-            type="email"
-            id="phr-agent-email"
-            class="phr-agent-input"
-            placeholder="Your email address"
-            autocomplete="email"
-        >
-
-
-        <textarea
-            id="phr-agent-message"
-            placeholder="Your message"
-        ></textarea>
-
-
-        <button id="phr-agent-submit">
-            SEND REQUEST
-        </button>
-
-
-        <div
-            id="phr-agent-status"
-            class="phr-agent-status"
-        ></div>
-
-    </div>
-
-
-    <!-- CHAT INPUT -->
-
-    <div class="phr-ai-input-area">
-
-        <textarea
-            id="phr-ai-input"
-            placeholder="Ask about PHRINUSOMYIS..."
-            autocomplete="off"
-        ></textarea>
-
-        <button id="phr-ai-send">
-            SEND
-        </button>
 
     </div>
 
@@ -1024,455 +940,283 @@ html {
 <script>
 
 /* =========================================================
-   HELP CENTER SEARCH
+   SITE SEARCH
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", function() {
+const sitePages = [
+    "index.html",
+    "events.html",
+    "news.html",
+    "press.html",
+    "luxury.html",
+    "circle.html",
+    "id.html",
+    "it.html",
+    "ja.html",
+    "de.html",
+    "perfume.html",
+    "contact.html",
+    "policy.html",
+    "copyright.html",
+    "terms.html",
+    "privacy.html",
+    "security.html",
+    "fr.html",
+    "cookies.html",
+    "close.html",
+    "zh.html",
+    "hi.html",
+    "ko.html",
+    "ru.html",
+    "es.html"
+];
 
-    const sitePages = [
+const searchInput = document.getElementById("siteSearch");
+const searchResults = document.getElementById("searchResults");
 
-        'index.html',
-        'events.html',
-        'news.html',
-        'press.html',
-        'luxury.html',
-        'circle.html',
-        'id.html',
-        'it.html',
-        'ja.html',
-        'de.html',
-        'perfume.html',
-        'contact.html',
-        'policy.html',
-        'copyright.html',
-        'terms.html',
-        'privacy.html',
-        'security.html',
-        'fr.html',
-        'cookies.html',
-        'close.html',
-        'zh.html',
-        'hi.html',
-        'ko.html',
-        'ru.html',
-        'es.html'
-
-    ];
-
-
-    let globalKnowledgeBase = [
-
-        {
-            text: "security protocols protection",
-            original: "Security protocols and protection systems.",
-            source: "SYSTEM"
-        },
-
-        {
-            text: "privacy settings data control",
-            original: "Privacy settings and data control.",
-            source: "SYSTEM"
-        },
-
-        {
-            text: "ticket support events",
-            original: "Ticket support and events.",
-            source: "SYSTEM"
-        },
-
-        {
-            text: "phrinusomyis",
-            original: "PHRINUSOMYIS is the company behind its international projects, platforms, events and related activities.",
-            source: "PHRINUSOMYIS"
-        },
-
-        {
-            text: "zeaviq sports",
-            original: "ZEAVIQ SPORTS™ is a sports platform associated with PHRINUSOMYIS.",
-            source: "PHRINUSOMYIS"
-        },
-
-        {
-            text: "sports theater",
-            original: "Sports Theater™ is a competitive sports platform concept associated with PHRINUSOMYIS.",
-            source: "PHRINUSOMYIS"
-        }
-
-    ];
+let searchIndex = [];
 
 
-    const searchInput =
-        document.querySelector(".search-bar");
+async function buildSearchIndex() {
 
-    const resultsContainer =
-        document.getElementById("searchResults");
+    const results = [];
 
-    const resultBox =
-        document.getElementById("resultBox");
+    for (const page of sitePages) {
 
+        try {
 
-    async function crawlSite() {
+            const response = await fetch(page);
 
-        for (let url of sitePages) {
-
-            try {
-
-                const response =
-                    await fetch(url);
-
-                if (!response.ok) continue;
-
-                const text =
-                    await response.text();
-
-                const parser =
-                    new DOMParser();
-
-                const doc =
-                    parser.parseFromString(
-                        text,
-                        "text/html"
-                    );
-
-                const content =
-                    doc.querySelectorAll(
-                        "h1, h2, h3, p, .support-text"
-                    );
-
-
-                content.forEach(el => {
-
-                    const cleanText =
-                        el.innerText.trim();
-
-                    if (cleanText.length > 5) {
-
-                        globalKnowledgeBase.push({
-
-                            text:
-                                cleanText.toLowerCase(),
-
-                            original:
-                                cleanText,
-
-                            source:
-                                url
-                                    .replace(".html", "")
-                                    .toUpperCase()
-
-                        });
-
-                    }
-
-                });
-
-            } catch (e) {
-
-                console.warn(
-                    "Could not index: " + url
-                );
-
+            if (!response.ok) {
+                continue;
             }
 
+            const html = await response.text();
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+
+            const title =
+                doc.querySelector("title")?.textContent ||
+                page;
+
+            const elements = doc.querySelectorAll(
+                "h1,h2,h3,p,.support-text"
+            );
+
+            let text = "";
+
+            elements.forEach(element => {
+                text += " " + element.textContent;
+            });
+
+            results.push({
+                page,
+                title,
+                text: text.trim()
+            });
+
+        } catch (error) {
+            console.log("Search error:", page);
         }
-
     }
 
-
-    crawlSite();
-
-
-    if (
-        searchInput &&
-        resultBox &&
-        resultsContainer
-    ) {
-
-        searchInput.addEventListener(
-            "input",
-            function() {
-
-                const query =
-                    this.value
-                        .toLowerCase()
-                        .trim();
-
-
-                if (query.length < 2) {
-
-                    resultsContainer.style.display =
-                        "none";
-
-                    return;
-
-                }
-
-
-                let matches =
-                    globalKnowledgeBase.filter(
-                        item =>
-                            item.text.includes(query)
-                    );
-
-
-                if (matches.length > 0) {
-
-                    const uniqueResults = [
-                        ...new Map(
-                            matches.map(
-                                m => [m.original, m]
-                            )
-                        ).values()
-                    ];
-
-
-                    resultBox.innerHTML =
-                        uniqueResults
-                            .slice(0, 6)
-                            .map(match => `
-
-                                <div style="
-                                    margin-bottom:15px;
-                                    padding:15px;
-                                    border-left:2px solid #D4AF37;
-                                    background:rgba(255,255,255,0.03);
-                                ">
-
-                                    <span style="
-                                        display:block;
-                                        font-size:9px;
-                                        color:#D4AF37;
-                                        letter-spacing:2px;
-                                        text-transform:uppercase;
-                                        margin-bottom:8px;
-                                    ">
-                                        ARCHIVE: ${escapeHTML(match.source)}
-                                    </span>
-
-                                    <p style="
-                                        color:#ffffff;
-                                        margin:0;
-                                        font-size:14px;
-                                        line-height:1.5;
-                                    ">
-                                        ${escapeHTML(match.original)}
-                                    </p>
-
-                                </div>
-
-                            `)
-                            .join("");
-
-
-                } else {
-
-                    resultBox.innerHTML = `
-
-                        <div style="
-                            padding:20px;
-                            color:#444;
-                            text-align:center;
-                        ">
-                            NO DATA MATCHES IN PHRINUSOMYIS ARCHIVES
-                        </div>
-
-                    `;
-
-                }
-
-
-                resultsContainer.style.display =
-                    "block";
-
-            }
-        );
-
-    }
-
-});
+    searchIndex = results;
+}
 
 
 function escapeHTML(value) {
 
-    return String(value)
-
+    return value
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
-
 }
+
+
+function performSearch(query) {
+
+    const cleanQuery = query.trim().toLowerCase();
+
+    if (!cleanQuery) {
+        searchResults.style.display = "none";
+        searchResults.innerHTML = "";
+        return;
+    }
+
+    const words = cleanQuery
+        .split(/\s+/)
+        .filter(Boolean);
+
+    const matches = searchIndex
+        .map(item => {
+
+            const haystack =
+                (item.title + " " + item.text).toLowerCase();
+
+            let score = 0;
+
+            words.forEach(word => {
+
+                if (haystack.includes(word)) {
+                    score++;
+                }
+
+                if (item.title.toLowerCase().includes(word)) {
+                    score += 2;
+                }
+
+            });
+
+            return {
+                ...item,
+                score
+            };
+
+        })
+        .filter(item => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 8);
+
+
+    if (!matches.length) {
+
+        searchResults.style.display = "block";
+
+        searchResults.innerHTML = `
+            <div class="search-result">
+                <strong>No results found</strong>
+                <span>Try another search.</span>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    searchResults.style.display = "block";
+
+    searchResults.innerHTML = matches.map(item => {
+
+        return `
+            <a
+                class="search-result"
+                href="${encodeURI(item.page)}"
+            >
+                <strong>${escapeHTML(item.title)}</strong>
+                <span>
+                    ${escapeHTML(item.text.substring(0, 180))}...
+                </span>
+            </a>
+        `;
+
+    }).join("");
+}
+
+
+searchInput.addEventListener(
+    "input",
+    () => performSearch(searchInput.value)
+);
+
+buildSearchIndex();
 
 
 /* =========================================================
    AI CHAT
 ========================================================= */
 
-const aiButton =
-    document.getElementById("phr-ai-button");
+const aiChatButton =
+    document.getElementById("aiChatButton");
 
-const aiChat =
-    document.getElementById("phr-ai-chat");
+const aiChatWindow =
+    document.getElementById("aiChatWindow");
 
-const aiClose =
-    document.getElementById("phr-ai-close");
+const closeChat =
+    document.getElementById("closeChat");
 
-const aiMessages =
-    document.getElementById("phr-ai-messages");
+const chatMessages =
+    document.getElementById("chatMessages");
 
-const aiInput =
-    document.getElementById("phr-ai-input");
+const chatInput =
+    document.getElementById("chatInput");
 
-const aiSend =
-    document.getElementById("phr-ai-send");
+const sendChat =
+    document.getElementById("sendChat");
+
+const typingIndicator =
+    document.getElementById("typingIndicator");
+
+const agentFormBox =
+    document.getElementById("agentFormBox");
 
 const agentForm =
-    document.getElementById("phr-agent-form");
-
-const agentName =
-    document.getElementById("phr-agent-name");
-
-const agentEmail =
-    document.getElementById("phr-agent-email");
-
-const agentMessage =
-    document.getElementById("phr-agent-message");
-
-const agentSubmit =
-    document.getElementById("phr-agent-submit");
+    document.getElementById("agentForm");
 
 const agentStatus =
-    document.getElementById("phr-agent-status");
+    document.getElementById("agentStatus");
 
 
 let chatHistory = [];
 
 
-/* OPEN CHAT */
+aiChatButton.addEventListener("click", () => {
 
-aiButton.addEventListener("click", function() {
-
-    aiChat.style.display = "flex";
-
-    aiButton.style.display = "none";
+    aiChatWindow.style.display = "flex";
 
     setTimeout(() => {
-        aiInput.focus();
+        chatInput.focus();
     }, 100);
 
 });
 
 
-/* CLOSE CHAT */
+closeChat.addEventListener("click", () => {
 
-aiClose.addEventListener("click", function() {
-
-    aiChat.style.display = "none";
-
-    aiButton.style.display = "block";
+    aiChatWindow.style.display = "none";
 
 });
 
 
-/* ADD MESSAGE */
-
-function addChatMessage(
-    message,
-    type
-) {
+function addMessage(role, text) {
 
     const wrapper =
         document.createElement("div");
 
     wrapper.className =
-        "phr-ai-message " + type;
+        "message " + role;
 
 
     const bubble =
         document.createElement("div");
 
     bubble.className =
-        "phr-ai-bubble";
+        "message-bubble";
 
-    bubble.textContent =
-        message;
+    bubble.textContent = text;
 
 
     wrapper.appendChild(bubble);
 
-    aiMessages.appendChild(wrapper);
+    chatMessages.appendChild(wrapper);
 
 
-    aiMessages.scrollTop =
-        aiMessages.scrollHeight;
-
+    chatMessages.scrollTop =
+        chatMessages.scrollHeight;
 }
 
 
-/* TYPING */
-
-function addTypingMessage() {
-
-    const wrapper =
-        document.createElement("div");
-
-    wrapper.id =
-        "phr-ai-typing";
-
-    wrapper.className =
-        "phr-ai-message bot typing";
-
-
-    wrapper.innerHTML = `
-
-        <div class="phr-ai-bubble">
-            PHRINUSOMYIS is typing...
-        </div>
-
-    `;
-
-
-    aiMessages.appendChild(wrapper);
-
-    aiMessages.scrollTop =
-        aiMessages.scrollHeight;
-
+function addBotMessage(text) {
+    addMessage("bot", text);
 }
 
 
-function removeTypingMessage() {
-
-    const typing =
-        document.getElementById(
-            "phr-ai-typing"
-        );
-
-    if (typing) {
-
-        typing.remove();
-
-    }
-
+function addUserMessage(text) {
+    addMessage("user", text);
 }
 
-
-/* SHOW AGENT FORM */
-
-function showAgentForm() {
-
-    agentForm.style.display =
-        "block";
-
-    agentName.focus();
-
-    aiMessages.scrollTop =
-        aiMessages.scrollHeight;
-
-}
-
-
-/* DETECT AGENT REQUEST */
 
 function wantsAgent(text) {
 
@@ -1483,188 +1227,162 @@ function wantsAgent(text) {
 
         "speak with an agent",
         "talk to an agent",
-        "chat with an agent",
+        "speak to an agent",
         "contact an agent",
-        "human agent",
         "human support",
+        "human representative",
+        "speak with someone",
         "speak to someone",
         "talk to someone",
-        "speak with someone",
         "talk with someone",
-        "speak to a person",
-        "talk to a person",
-        "human representative",
-        "representative",
         "customer service",
-        "real person",
-        "actual person",
-        "member of the team",
-        "speak with the team",
-        "talk with the team",
-        "contact the team"
+        "speak with a person",
+        "talk to a person",
+        "human assistance",
+        "contact support",
+        "contact the team",
+        "speak with the team"
 
     ];
 
-
     return phrases.some(
-        phrase =>
-            lower.includes(phrase)
+        phrase => lower.includes(phrase)
     );
+}
+
+
+function showAgentForm() {
+
+    agentFormBox.style.display = "block";
+
+    setTimeout(() => {
+
+        agentFormBox.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+
+    }, 100);
 
 }
 
 
-/* SEND MESSAGE */
-
-async function sendAIMessage() {
+async function sendMessage() {
 
     const message =
-        aiInput.value.trim();
+        chatInput.value.trim();
+
+    if (!message) {
+        return;
+    }
 
 
-    if (!message) return;
+    addUserMessage(message);
 
+    chatInput.value = "";
 
-    addChatMessage(
-        message,
-        "user"
-    );
+    chatInput.style.height = "auto";
 
+    chatHistory.push({
+        role: "user",
+        content: message
+    });
 
-    aiInput.value = "";
-
-
-    /* AGENT REQUEST */
 
     if (wantsAgent(message)) {
 
-        addChatMessage(
-
-            "Of course. If you would like to speak with a member of the PHRINUSOMYIS team, please send your name, email address and message below. Your request will be forwarded to info@phrinusomyiS.com.",
-
-            "bot"
-
+        addBotMessage(
+            "Of course. If you would like to speak with a member of the PHRINUSOMYIS team, please send your name, email address and message below. Your request will be forwarded to our team at info@phrinusomyis.com."
         );
 
         showAgentForm();
 
         return;
-
     }
 
 
-    chatHistory.push({
+    sendChat.disabled = true;
 
-        role: "user",
-        content: message
-
-    });
-
-
-    addTypingMessage();
+    typingIndicator.style.display = "block";
 
 
     try {
 
         const response =
-            await fetch(
-                "/api/chat.php",
-                {
-                    method: "POST",
+            await fetch("api/chat.php", {
 
-                    headers: {
-                        "Content-Type":
-                            "application/json"
-                    },
+                method: "POST",
 
-                    body:
-                        JSON.stringify({
+                headers: {
+                    "Content-Type": "application/json"
+                },
 
-                            message:
-                                message,
+                body: JSON.stringify({
+                    message: message,
+                    history: chatHistory.slice(-12)
+                })
 
-                            history:
-                                chatHistory.slice(-12)
-
-                        })
-
-                }
-            );
+            });
 
 
         const data =
             await response.json();
 
 
-        removeTypingMessage();
-
-
-        if (
-            !response.ok ||
-            !data.reply
-        ) {
+        if (!response.ok) {
 
             throw new Error(
                 data.error ||
-                "Unable to receive response."
+                "Unable to connect to the assistant."
             );
 
         }
 
 
-        addChatMessage(
-            data.reply,
-            "bot"
-        );
+        const reply =
+            data.reply ||
+            "I'm sorry, I couldn't process that request.";
+
+
+        addBotMessage(reply);
 
 
         chatHistory.push({
-
             role: "assistant",
-
-            content:
-                data.reply
-
+            content: reply
         });
 
 
     } catch (error) {
 
-        removeTypingMessage();
+        console.error(error);
 
-
-        addChatMessage(
-
-            "I’m unable to complete that request right now. Please try again shortly.",
-
-            "bot"
-
+        addBotMessage(
+            "I'm sorry, there was a problem connecting to the PHRINUSOMYIS information assistant. Please try again."
         );
 
+    } finally {
 
-        console.error(
-            "AI error:",
-            error
-        );
+        typingIndicator.style.display = "none";
+
+        sendChat.disabled = false;
+
+        chatInput.focus();
 
     }
 
 }
 
 
-/* SEND BUTTON */
-
-aiSend.addEventListener(
+sendChat.addEventListener(
     "click",
-    sendAIMessage
+    sendMessage
 );
 
 
-/* ENTER KEY */
-
-aiInput.addEventListener(
+chatInput.addEventListener(
     "keydown",
-    function(event) {
+    event => {
 
         if (
             event.key === "Enter" &&
@@ -1673,7 +1391,7 @@ aiInput.addEventListener(
 
             event.preventDefault();
 
-            sendAIMessage();
+            sendMessage();
 
         }
 
@@ -1681,209 +1399,114 @@ aiInput.addEventListener(
 );
 
 
-/* QUICK QUESTIONS */
+chatInput.addEventListener(
+    "input",
+    () => {
 
-document
-    .querySelectorAll(".phr-ai-quick button")
-    .forEach(button => {
+        chatInput.style.height = "auto";
 
-        button.addEventListener(
-            "click",
-            function() {
+        chatInput.style.height =
+            Math.min(
+                chatInput.scrollHeight,
+                110
+            ) + "px";
 
-                const question =
-                    this.dataset.question;
-
-
-                if (
-                    wantsAgent(question)
-                ) {
-
-                    addChatMessage(
-                        question,
-                        "user"
-                    );
-
-
-                    addChatMessage(
-
-                        "Of course. If you would like to speak with a member of the PHRINUSOMYIS team, please send your name, email address and message below. Your request will be forwarded to info@phrinusomyiS.com.",
-
-                        "bot"
-
-                    );
-
-
-                    showAgentForm();
-
-                    return;
-
-                }
-
-
-                aiInput.value =
-                    question;
-
-                sendAIMessage();
-
-            }
-        );
-
-    });
+    }
+);
 
 
 /* =========================================================
-   AGENT REQUEST
+   HUMAN CONTACT FORM
 ========================================================= */
 
-agentSubmit.addEventListener(
-    "click",
-    async function() {
+agentForm.addEventListener(
+    "submit",
+    async event => {
 
-        const name =
-            agentName.value.trim();
-
-        const email =
-            agentEmail.value.trim();
-
-        const message =
-            agentMessage.value.trim();
+        event.preventDefault();
 
 
-        if (!name) {
-
-            agentStatus.style.display =
-                "block";
-
-            agentStatus.textContent =
-                "Please enter your name.";
-
-            return;
-
-        }
+        const formData =
+            new FormData(agentForm);
 
 
-        if (
-            !email ||
-            !email.includes("@")
-        ) {
-
-            agentStatus.style.display =
-                "block";
-
-            agentStatus.textContent =
-                "Please enter a valid email address.";
-
-            return;
-
-        }
+        const submitButton =
+            document.getElementById("agentSubmit");
 
 
-        if (!message) {
+        submitButton.disabled = true;
 
-            agentStatus.style.display =
-                "block";
-
-            agentStatus.textContent =
-                "Please enter your message.";
-
-            return;
-
-        }
-
-
-        agentSubmit.disabled =
-            true;
-
-        agentSubmit.textContent =
+        submitButton.textContent =
             "SENDING...";
 
 
         agentStatus.style.display =
-            "block";
-
-        agentStatus.textContent =
-            "Sending your request...";
+            "none";
 
 
         try {
 
             const response =
                 await fetch(
-                    "/api/contact-agent.php",
+                    "api/contact-agent.php",
                     {
                         method: "POST",
-
-                        headers: {
-                            "Content-Type":
-                                "application/json"
-                        },
-
-                        body:
-                            JSON.stringify({
-
-                                name:
-                                    name,
-
-                                email:
-                                    email,
-
-                                message:
-                                    message
-
-                            })
-
-                        }
-
-                    );
+                        body: formData
+                    }
+                );
 
 
             const data =
                 await response.json();
 
 
-            if (
-                !response.ok ||
-                !data.success
-            ) {
+            if (!response.ok) {
 
                 throw new Error(
                     data.error ||
-                    "Unable to send request."
+                    "Unable to send message."
                 );
 
             }
 
 
+            agentStatus.style.display =
+                "block";
+
+            agentStatus.style.color =
+                "#D4AF37";
+
             agentStatus.textContent =
-                "Your message has been sent to the PHRINUSOMYIS team. Thank you.";
+                "Your message has been sent to the PHRINUSOMYIS team.";
 
 
-            agentName.value = "";
-            agentEmail.value = "";
-            agentMessage.value = "";
+            agentForm.reset();
 
 
         } catch (error) {
 
-            agentStatus.textContent =
-                "We could not send the request right now. Please try again shortly.";
+            agentStatus.style.display =
+                "block";
 
-            console.error(
-                "Agent request error:",
-                error
-            );
+            agentStatus.style.color =
+                "#ff7777";
+
+            agentStatus.textContent =
+                error.message ||
+                "Unable to send your message. Please try again.";
+
+        } finally {
+
+            submitButton.disabled =
+                false;
+
+            submitButton.textContent =
+                "SEND MESSAGE";
 
         }
 
-
-        agentSubmit.disabled =
-            false;
-
-        agentSubmit.textContent =
-            "SEND REQUEST";
-
-    });
+    }
+);
 
 </script>
 

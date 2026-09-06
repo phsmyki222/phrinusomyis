@@ -1,757 +1,1015 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELP CENTER | PHRINUSOMYIS GLOBAL</title>
-    <meta name="description" content="PHRINUSOMYIS Help Center — Global information, support and assistance.">
-    <meta name="keywords" content="PHRINUSOMYIS, Help Center, Support, Global Support, Customer Support">
-    <meta property="og:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
-    <meta property="og:description" content="PHRINUSOMYIS Global Help Center.">
-    <meta property="og:image" content="https://phrinusomyis.com/phrinusomyis_logo.png">
-    <meta property="og:url" content="https://phrinusomyis.com/help.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
-    <meta name="twitter:description" content="PHRINUSOMYIS Global Help Center.">
-    <meta name="twitter:image" content="https://phrinusomyis.com/phrinusomyis_logo.png">
-    <meta name="theme-color" content="#050505">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "HelpPage",
-        "name": "PHRINUSOMYIS Help Center",
-        "url": "https://phrinusomyis.com/help.html",
-        "description": "PHRINUSOMYIS Global Help Center.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "PHRINUSOMYIS",
-            "url": "https://phrinusomyis.com"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "email": "info@phrinusomyis.com"
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELP CENTER | PHRINUSOMYIS GLOBAL</title>
+<meta name="title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
+<meta name="description" content="Access the PHRINUSOMYIS Global Support Division. Search our archives for account access, security protocols, product verification, and international tour operations.">
+<meta name="keywords" content="PHRINUSOMYIS Help, Support Division, Account Recovery, Product Verification, Stadium Access, Security Protocols, Brooklyn Archives">
+<meta name="author" content="PHRINUSOMYIS GLOBAL">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://phrinusomyis.com/help">
+<meta property="og:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
+<meta property="og:description" content="Global Command Support. Search our operational archives and security layers for assistance.">
+<meta property="og:image" content="https://phrinusomyis.com/phrinusomyis_logo.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="HELP CENTER | PHRINUSOMYIS GLOBAL">
+<meta property="twitter:description" content="Operational assistance for the PHRINUSOMYIS global network.">
+<meta name="theme-color" content="#050505">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- =========================================================
+     STRUCTURED DATA
+========================================================= -->
+
+<script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "HelpPage",
+  "name": "Help Center | PHRINUSOMYIS GLOBAL",
+  "description": "Official Global Support Division and knowledge archives for PHRINUSOMYIS. Access account support, product verification, and international operational guidance.",
+  "url": "https://phrinusomyis.com/help",
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "PHRINUSOMYIS GLOBAL",
+    "logo": "https://phrinusomyis.com/phrinusomyis_logo.png",
+
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@phrinusomyis.com",
+      "contactType": "Priority Support",
+      "availableLanguage": "Global"
     }
-    </script>
-
-    <style>
-        :root {
-            --gold: #D4AF37;
-            --obsidian: #050505;
-            --black: #000000;
-            --white: #ffffff;
-            --muted: #a5a5a5;
-            --border: #1a1a1a;
-            --card: #0b0b0b;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            background: var(--obsidian);
-            color: var(--white);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        button,
-        input,
-        textarea {
-            font: inherit;
-        }
-
-        /* HEADER */
-
-        header {
-            border-bottom: 1px solid var(--border);
-            background: #050505;
-            padding: 18px 5%;
-        }
-
-        .header-inner {
-            max-width: 1250px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .brand img {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-name {
-            color: var(--gold);
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .brand-title {
-            color: #aaa;
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-
-        .status {
-            color: var(--gold);
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-
-        /* MAIN */
-
-        main {
-            max-width: 1250px;
-            margin: auto;
-            padding: 70px 5% 100px;
-        }
-
-        .hero {
-            text-align: center;
-            max-width: 850px;
-            margin: 0 auto 55px;
-        }
-
-        .hero h1 {
-            margin: 0 0 15px;
-            font-size: clamp(34px, 5vw, 58px);
-            letter-spacing: 1px;
-        }
-
-        .hero p {
-            margin: 0;
-            color: var(--muted);
-            font-size: 17px;
-        }
-
-        /* SEARCH */
-
-        .search-wrap {
-            max-width: 850px;
-            margin: 0 auto 45px;
-        }
-
-        .search-box {
-            display: flex;
-            align-items: center;
-            border: 1px solid #272727;
-            background: #0a0a0a;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 18px 20px;
-            background: transparent;
-            border: 0;
-            outline: none;
-            color: white;
-            font-size: 16px;
-        }
-
-        .search-box input::placeholder {
-            color: #777;
-        }
-
-        .search-results {
-            display: none;
-            margin-top: 10px;
-            border: 1px solid var(--border);
-            background: #090909;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .search-result {
-            display: block;
-            padding: 15px 18px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .search-result:last-child {
-            border-bottom: 0;
-        }
-
-        .search-result strong {
-            display: block;
-            color: var(--gold);
-            margin-bottom: 4px;
-        }
-
-        .search-result span {
-            color: #999;
-            font-size: 13px;
-        }
-
-        /* HELP GRID */
-
-        .section-title {
-            margin-bottom: 25px;
-        }
-
-        .section-title h2 {
-            margin: 0;
-            font-size: 25px;
-        }
-
-        .section-title p {
-            color: #888;
-            margin: 7px 0 0;
-        }
-
-        .help-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            margin-bottom: 70px;
-        }
-
-        .help-card {
-            min-height: 180px;
-            padding: 25px;
-            border: 1px solid var(--border);
-            background: var(--card);
-            border-radius: 8px;
-            transition: .2s ease;
-        }
-
-        .help-card:hover {
-            border-color: #444;
-            transform: translateY(-2px);
-        }
-
-        .help-card h3 {
-            margin: 0 0 10px;
-            color: var(--gold);
-            font-size: 17px;
-        }
-
-        .help-card p {
-            color: #999;
-            font-size: 14px;
-            margin: 0;
-        }
-
-        /* PRIORITY SUPPORT */
-
-        .priority {
-            border: 1px solid var(--border);
-            padding: 35px;
-            background: #080808;
-            border-radius: 8px;
-            margin-bottom: 70px;
-        }
-
-        .priority h2 {
-            margin: 0 0 10px;
-        }
-
-        .priority p {
-            color: #999;
-            margin: 0 0 20px;
-        }
-
-        .mail-link {
-            color: var(--gold);
-        }
-
-        /* FOOTER */
-
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 60px 5% 30px;
-            background: #030303;
-        }
-
-        .footer-grid {
-            max-width: 1250px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 35px;
-        }
-
-        .footer-column h3 {
-            font-size: 12px;
-            color: var(--gold);
-            letter-spacing: 2px;
-            margin: 0 0 15px;
-        }
-
-        .footer-column a {
-            display: block;
-            color: #777;
-            font-size: 13px;
-            margin-bottom: 9px;
-        }
-
-        .footer-column a:hover {
-            color: white;
-        }
-
-        .copyright {
-            max-width: 1250px;
-            margin: 50px auto 0;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            color: #555;
-            font-size: 12px;
-        }
-
-        /* AI CHAT BUTTON */
-
-        #aiChatButton {
-            position: fixed;
-            right: 24px;
-            bottom: 24px;
-            z-index: 9998;
-            border: 1px solid var(--gold);
-            background: #050505;
-            color: var(--gold);
-            padding: 14px 20px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            box-shadow: 0 10px 35px rgba(0,0,0,.5);
-        }
-
-        #aiChatButton:hover {
-            background: var(--gold);
-            color: black;
-        }
-
-        /* CHAT WINDOW */
-
-        #aiChatWindow {
-            position: fixed;
-            right: 24px;
-            bottom: 85px;
-            width: min(430px, calc(100vw - 30px));
-            height: min(650px, calc(100vh - 110px));
-            background: #080808;
-            border: 1px solid #292929;
-            border-radius: 12px;
-            z-index: 9999;
-            display: none;
-            flex-direction: column;
-            overflow: hidden;
-            box-shadow: 0 20px 70px rgba(0,0,0,.7);
-        }
-
-        .chat-header {
-            padding: 16px 18px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background: #050505;
-        }
-
-        .chat-header img {
-            width: 38px;
-            height: 38px;
-            object-fit: contain;
-        }
-
-        .chat-header-info {
-            flex: 1;
-        }
-
-        .chat-header-info strong {
-            display: block;
-            color: white;
-            font-size: 14px;
-            letter-spacing: 1px;
-        }
-
-        .chat-header-info span {
-            display: block;
-            color: #777;
-            font-size: 11px;
-            margin-top: 2px;
-        }
-
-        #closeChat {
-            background: none;
-            border: 0;
-            color: #888;
-            cursor: pointer;
-            font-size: 22px;
-        }
-
-        #closeChat:hover {
-            color: white;
-        }
-
-        /* CHAT MESSAGES */
-
-        #chatMessages {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-        }
-
-        .message {
-            display: flex;
-            margin-bottom: 15px;
-        }
-
-        .message.user {
-            justify-content: flex-end;
-        }
-
-        .message-bubble {
-            max-width: 85%;
-            padding: 12px 14px;
-            border-radius: 9px;
-            font-size: 14px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        .message.bot .message-bubble {
-            background: #111;
-            border: 1px solid #202020;
-            color: #ddd;
-        }
-
-        .message.user .message-bubble {
-            background: var(--gold);
-            color: #050505;
-        }
-
-        /* CHAT INPUT */
-
-        .chat-input-area {
-            border-top: 1px solid var(--border);
-            padding: 12px;
-            background: #050505;
-        }
-
-        .chat-input-row {
-            display: flex;
-            gap: 8px;
-        }
-
-        #chatInput {
-            flex: 1;
-            min-width: 0;
-            resize: none;
-            min-height: 45px;
-            max-height: 110px;
-            padding: 12px;
-            background: #0d0d0d;
-            border: 1px solid #242424;
-            border-radius: 7px;
-            color: white;
-            outline: none;
-        }
-
-        #chatInput:focus {
-            border-color: #444;
-        }
-
-        #sendChat {
-            width: 48px;
-            border: 1px solid var(--gold);
-            background: var(--gold);
-            color: #000;
-            border-radius: 7px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        #sendChat:disabled {
-            opacity: .5;
-            cursor: not-allowed;
-        }
-
-        .typing {
-            color: #777;
-            font-size: 12px;
-            padding: 0 5px 10px;
-            display: none;
-        }
-
-        /* AGENT FORM */
-
-        #agentFormBox {
-            display: none;
-            padding: 18px;
-            border-top: 1px solid var(--border);
-            background: #090909;
-            max-height: 70%;
-            overflow-y: auto;
-        }
-
-        #agentFormBox h3 {
-            margin: 0 0 7px;
-            color: var(--gold);
-            font-size: 16px;
-        }
-
-        #agentFormBox p {
-            margin: 0 0 15px;
-            color: #888;
-            font-size: 12px;
-        }
-
-        .agent-field {
-            margin-bottom: 10px;
-        }
-
-        .agent-field label {
-            display: block;
-            color: #aaa;
-            font-size: 11px;
-            margin-bottom: 5px;
-        }
-
-        .agent-field input,
-        .agent-field textarea {
-            width: 100%;
-            padding: 10px;
-            background: #050505;
-            border: 1px solid #242424;
-            color: white;
-            border-radius: 6px;
-            outline: none;
-        }
-
-        .agent-field textarea {
-            min-height: 85px;
-            resize: vertical;
-        }
-
-        #agentSubmit {
-            width: 100%;
-            padding: 11px;
-            background: var(--gold);
-            border: 0;
-            border-radius: 6px;
-            cursor: pointer;
-            color: #000;
-            font-weight: bold;
-        }
-
-        .agent-status {
-            margin-top: 10px;
-            font-size: 12px;
-            display: none;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 900px) {
-            .help-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            main {
-                padding-top: 45px;
-            }
-
-            .header-inner {
-                align-items: flex-start;
-            }
-
-            .status {
-                display: none;
-            }
-
-            .help-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            #aiChatWindow {
-                right: 10px;
-                bottom: 80px;
-                width: calc(100vw - 20px);
-                height: calc(100vh - 100px);
-            }
-
-            #aiChatButton {
-                right: 15px;
-                bottom: 15px;
-            }
-        }
-    </style>
+  },
+
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Support Categories",
+
+    "itemListElement": [
+
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Account Access",
+        "description": "Identity verification and account control systems."
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Product Verification",
+        "description": "Authenticity systems and operational purchase records."
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Global Venue Access",
+        "description": "International stadium entry and venue authorization."
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "International Tour Operations",
+        "description": "Global tour schedules and regional event coordination."
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Security Operations",
+        "description": "Operational monitoring and protection protocols."
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Privacy & Data Control",
+        "description": "User rights and data protection preferences."
+      }
+
+    ]
+  },
+
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://phrinusomyis.com/help?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+
+    "itemListElement": [
+
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Main",
+        "item": "https://phrinusomyis.com/"
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Help Center",
+        "item": "https://phrinusomyis.com/help"
+      }
+
+    ]
+  }
+
+}
+
+</script>
+
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --gold: #D4AF37;
+    --obsidian: #050505;
+    --border: #1a1a1a;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.help-header {
+    padding: 120px 20px 80px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(to bottom, #0a0a0a, #000);
+}
+
+.help-logo {
+    width: 80px;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.help-header h1 {
+    font-size: 24px;
+    letter-spacing: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.help-status {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    display: block;
+}
+
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+.language-bar {
+    margin-top: 30px;
+}
+
+#languageSwitcher {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+#languageSwitcher option {
+    background: #000;
+    color: #fff;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-wrap {
+    max-width: 600px;
+    margin: -30px auto 0;
+    padding: 0 20px;
+}
+
+.search-bar {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--obsidian);
+    border: 1px solid var(--gold);
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.search-bar::placeholder {
+    color: #666;
+}
+
+
+/* =========================================================
+   SEARCH RESULTS
+========================================================= */
+
+#searchResults {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: none;
+}
+
+#resultBox {
+    border: 1px solid #1a1a1a;
+    background: #050505;
+    padding: 35px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.help-container {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 20px 150px;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.help-card {
+    background-color: #050505;
+    border: 1px solid var(--border);
+    padding: 50px 40px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.help-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.help-card h3 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.help-card p {
+    color: #555;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   SUPPORT
+========================================================= */
+
+.escalation-zone {
+    margin-top: 100px;
+    padding: 60px;
+    border: 1px solid #111;
+    text-align: center;
+    background: radial-gradient(
+        circle at center,
+        #0a0a0a 0%,
+        #000 100%
+    );
+}
+
+.escalation-zone h2 {
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.escalation-zone p {
+    color: #444;
+    font-size: 13px;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: var(--gold);
+    color: #000;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.phr-main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 20px 40px;
+    border-top: 1px solid #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+.phr-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+}
+
+.phr-footer-section h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.phr-footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phr-footer-section li {
+    margin-bottom: 15px;
+}
+
+.phr-footer-section a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.phr-footer-section a:hover {
+    color: #D4AF37;
+}
+
+.phr-global-bar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 1px solid #1a1a1a;
+    text-align: center;
+}
+
+.phr-global-bar h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.phr-hq-label {
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.phr-footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DYLAN CHAT BUTTON
+========================================================= */
+
+#dylanOpenButton {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9998;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #050505;
+    color: #D4AF37;
+
+    border: 1px solid #D4AF37;
+    border-radius: 3px;
+
+    padding: 14px 18px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.55);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+#dylanOpenButton:hover {
+    background: #D4AF37;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.dylan-button-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #D4AF37;
+    box-shadow: 0 0 10px rgba(212,175,55,0.7);
+}
+
+
+/* =========================================================
+   DYLAN CHAT WINDOW
+========================================================= */
+
+#dylanChat {
+    position: fixed;
+    right: 25px;
+    bottom: 85px;
+    z-index: 9999;
+
+    width: 390px;
+    max-width: calc(100vw - 30px);
+    height: 570px;
+    max-height: calc(100vh - 110px);
+
+    display: none;
+    flex-direction: column;
+
+    background: #050505;
+    border: 1px solid #252525;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,0.8);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DYLAN HEADER
+========================================================= */
+
+.dylan-header {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 17px;
+
+    border-bottom: 1px solid #1b1b1b;
+    background: #080808;
+}
+
+.dylan-identity {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.dylan-header-logo {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+}
+
+.dylan-name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.dylan-role {
+    margin-top: 2px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+#dylanCloseButton {
+    width: 32px;
+    height: 32px;
+
+    background: transparent;
+    border: 1px solid #222;
+
+    color: #777;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+#dylanCloseButton:hover {
+    border-color: #D4AF37;
+    color: #D4AF37;
+}
+
+
+/* =========================================================
+   CHAT MESSAGES
+========================================================= */
+
+#dylanMessages {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212,175,55,0.035),
+            transparent 45%
+        ),
+        #030303;
+}
+
+.dylan-message-row {
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.dylan-message-row.user {
+    justify-content: flex-end;
+}
+
+.dylan-message {
+    max-width: 84%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #191919;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.dylan-message.assistant {
+    background: #080808;
+    color: #ddd;
+}
+
+.dylan-message.user {
+    background: #D4AF37;
+    color: #000;
+    border-color: #D4AF37;
+}
+
+
+/* =========================================================
+   TYPING INDICATOR
+========================================================= */
+
+.dylan-typing {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dylan-typing span {
+    width: 5px;
+    height: 5px;
+
+    background: #777;
+    border-radius: 50%;
+
+    animation: dylanTyping 1.2s infinite ease-in-out;
+}
+
+.dylan-typing span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.dylan-typing span:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+@keyframes dylanTyping {
+
+    0%, 60%, 100% {
+        opacity: 0.25;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+
+}
+
+
+/* =========================================================
+   CHAT INPUT
+========================================================= */
+
+.dylan-input-area {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px;
+
+    border-top: 1px solid #1b1b1b;
+    background: #070707;
+}
+
+#dylanInput {
+    flex: 1;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    background: #000;
+    color: #fff;
+
+    border: 1px solid #242424;
+
+    padding: 13px 12px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+#dylanInput:focus {
+    border-color: #D4AF37;
+}
+
+#dylanInput::placeholder {
+    color: #555;
+}
+
+#dylanSend {
+    flex-shrink: 0;
+
+    background: #D4AF37;
+    color: #000;
+
+    border: 1px solid #D4AF37;
+
+    padding: 13px 15px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+#dylanSend:hover {
+    background: #fff;
+    border-color: #fff;
+}
+
+#dylanSend:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .help-header {
+        padding: 80px 20px 65px;
+    }
+
+    .help-header h1 {
+        font-size: 19px;
+        letter-spacing: 8px;
+    }
+
+    .help-container {
+        margin-top: 70px;
+    }
+
+    .help-card {
+        padding: 35px 25px;
+    }
+
+    .escalation-zone {
+        padding: 40px 25px;
+    }
+
+    .phr-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #dylanOpenButton {
+        right: 15px;
+        bottom: 15px;
+        padding: 13px 15px;
+    }
+
+    #dylanChat {
+        right: 10px;
+        bottom: 75px;
+
+        width: calc(100vw - 20px);
+        max-width: none;
+
+        height: calc(100vh - 100px);
+        max-height: 650px;
+    }
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-<header>
-    <div class="header-inner">
 
-        <div class="brand">
-            <img src="phrinusomyis_logo.png" alt="PHRINUSOMYIS">
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-            <div class="brand-text">
-                <div class="brand-name">PHRINUSOMYIS</div>
-                <div class="brand-title">HELP CENTER</div>
-            </div>
-        </div>
+<header class="help-header">
 
-        <div class="status">
-            GLOBAL SUPPORT SERVICES — ACTIVE
-        </div>
+    <img
+        src="phrinusomyis_logo.png"
+        class="help-logo"
+        alt="PHRINUSOMYIS"
+    >
 
+    <h1>Help Center</h1>
+
+    <span class="help-status">
+        Global Support Services — Active
+    </span>
+
+    <div class="language-bar">
+        <!-- Language switcher can be added here later if needed -->
     </div>
+
 </header>
 
 
-<main>
+<!-- =========================================================
+     SEARCH
+========================================================= -->
 
-    <section class="hero">
-        <h1>Help Center</h1>
-        <p>
-            Find information about PHRINUSOMYIS and access global support.
-        </p>
-    </section>
+<div class="search-wrap">
 
+    <input
+        type="text"
+        class="search-bar"
+        placeholder="Search Help Topics"
+        aria-label="Search Help Topics"
+    >
 
-    <section class="search-wrap">
-
-        <div class="search-box">
-            <input
-                type="text"
-                id="siteSearch"
-                placeholder="Search the PHRINUSOMYIS website..."
-                autocomplete="off"
-            >
-        </div>
-
-        <div id="searchResults" class="search-results"></div>
-
-    </section>
+</div>
 
 
-    <section>
+<div id="searchResults">
 
-        <div class="section-title">
-            <h2>Support</h2>
-            <p>Information and assistance across PHRINUSOMYIS services.</p>
-        </div>
+    <div id="resultBox"></div>
+
+</div>
 
 
-        <div class="help-grid">
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
 
-            <a class="help-card" href="contact.html">
-                <h3>Account Access</h3>
-                <p>
-                    Information about access, account questions and general assistance.
-                </p>
-            </a>
+<main class="help-container">
 
-            <a class="help-card" href="id.html">
-                <h3>Product Verification</h3>
-                <p>
-                    Information relating to verification and product-related enquiries.
-                </p>
-            </a>
+    <div class="help-grid">
 
-            <a class="help-card" href="events.html">
-                <h3>Global Venue Access</h3>
-                <p>
-                    Information relating to venues, events and access.
-                </p>
-            </a>
 
-            <a class="help-card" href="events.html">
-                <h3>International Tour Operations</h3>
-                <p>
-                    Information about international events and related operations.
-                </p>
-            </a>
+        <div class="help-card">
 
-            <a class="help-card" href="security.html">
-                <h3>Security Operations</h3>
-                <p>
-                    Security information and reporting.
-                </p>
-            </a>
+            <h3>Account Access</h3>
 
-            <a class="help-card" href="privacy.html">
-                <h3>Privacy & Data Control</h3>
-                <p>
-                    Privacy information and data-related requests.
-                </p>
-            </a>
-
-            <a class="help-card" href="press.html">
-                <h3>Media & Broadcast Network</h3>
-                <p>
-                    Information for media, press and broadcast enquiries.
-                </p>
-            </a>
-
-            <a class="help-card" href="contact.html">
-                <h3>Hospitality & VIP Services</h3>
-                <p>
-                    Contact the PHRINUSOMYIS team regarding hospitality and VIP enquiries.
-                </p>
-            </a>
+            <p>
+                Help with login, recovery, identity verification,
+                and account control systems.
+            </p>
 
         </div>
 
-    </section>
+
+        <div class="help-card">
+
+            <h3>Product Verification</h3>
+
+            <p>
+                Verify registered products, authenticity systems,
+                and operational purchase records.
+            </p>
+
+        </div>
 
 
-    <section class="priority">
+        <div class="help-card">
+
+            <h3>Global Venue Access</h3>
+
+            <p>
+                International stadium entry systems, venue authorization,
+                seating guidance, and operational access support.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <h3>International Tour Operations</h3>
+
+            <p>
+                Support for global tour schedules, regional event coordination,
+                live production logistics, and international operations.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <h3>Security Operations</h3>
+
+            <p>
+                Access platform security systems, operational monitoring,
+                verification layers, and protection protocols.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <h3>Privacy &amp; Data Control</h3>
+
+            <p>
+                Manage privacy settings, operational cookies,
+                user rights, and data protection preferences.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <h3>Media &amp; Broadcast Network</h3>
+
+            <p>
+                Assistance for media teams, press systems,
+                broadcasting operations, and production coordination.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <h3>Hospitality &amp; VIP Services</h3>
+
+            <p>
+                Premium guest support, executive hospitality systems,
+                VIP access, and international experience services.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         PRIORITY SUPPORT
+    ====================================================== -->
+
+    <section class="escalation-zone">
 
         <h2>Priority Support</h2>
 
         <p>
-            For direct enquiries, you can contact the PHRINUSOMYIS team.
+            For urgent operational support from HQ team.
         </p>
 
         <a
-            class="mail-link"
             href="mailto:info@phrinusomyis.com"
+            class="contact-btn"
         >
-            info@phrinusomyis.com
+            Contact Support
         </a>
 
     </section>
@@ -759,756 +1017,1000 @@
 </main>
 
 
-<footer>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-    <div class="footer-grid">
+<footer class="phr-main-footer">
 
-        <div class="footer-column">
+    <div class="phr-footer-grid">
+
+
+        <!-- LUXURY -->
+
+        <div class="phr-footer-section">
+
             <h3>LUXURY</h3>
-            <a href="luxury.html">Luxury</a>
-            <a href="circle.html">Circle</a>
-            <a href="perfume.html">Perfume</a>
-            <a href="contact.html">Contact</a>
+
+            <ul>
+
+                <li>
+                    <a href="luxury">
+                        Luxury Identity
+                    </a>
+                </li>
+
+                <li>
+                    <a href="circle">
+                        Private Access
+                    </a>
+                </li>
+
+                <li>
+                    <a href="perfume">
+                        Perfumes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
 
-        <div class="footer-column">
+
+        <!-- M3AN -->
+
+        <div class="phr-footer-section">
+
             <h3>M3AN</h3>
-            <a href="news.html">News</a>
-            <a href="press.html">Press</a>
-            <a href="events.html">Events</a>
-            <a href="luxury.html">Luxury</a>
+
+            <ul>
+
+                <li>
+                    <a href="news">
+                        Latest News
+                    </a>
+                </li>
+
+                <li>
+                    <a href="press">
+                        Press Release
+                    </a>
+                </li>
+
+                <li>
+                    <a href="events">
+                        Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="luxury">
+                        PHRINUSOMYIS Luxury
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
 
-        <div class="footer-column">
+
+        <!-- ABOUT -->
+
+        <div class="phr-footer-section">
+
             <h3>ABOUT</h3>
-            <a href="policy.html">Policy</a>
-            <a href="copyright.html">Copyright</a>
-            <a href="terms.html">Terms</a>
-            <a href="privacy.html">Privacy</a>
+
+            <ul>
+
+                <li>
+                    <a href="policy">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="copyright">
+                        Copyright
+                    </a>
+                </li>
+
+                <li>
+                    <a href="terms">
+                        Terms of Use
+                    </a>
+                </li>
+
+                <li>
+                    <a href="privacy">
+                        Privacy Choices
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
 
-        <div class="footer-column">
+
+        <!-- HELP -->
+
+        <div class="phr-footer-section">
+
             <h3>HELP</h3>
-            <a href="security.html">Security</a>
-            <a href="help.html">Help Center</a>
-            <a href="cookies.html">Cookies</a>
-            <a href="close.html">Close</a>
+
+            <ul>
+
+                <li>
+                    <a href="security">
+                        Security
+                    </a>
+                </li>
+
+                <li>
+                    <a href="help">
+                        Help Center
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cookies">
+                        Cookie Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="close">
+                        Closed Captions
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
+
 
     </div>
 
-    <div class="copyright">
-        © PHRINUSOMYIS. All rights reserved.
+
+    <div class="phr-footer-bottom">
+
+        © 2026 PHRINUSOMYIS — Official Global Support Division.
+        All Rights Reserved.
+
     </div>
 
 </footer>
 
 
-<!-- ========================================================= -->
-<!-- PHRINUSOMYIS AI SUPPORT CHATBOT -->
-<!-- ========================================================= -->
+<!-- =========================================================
+     DYLAN CHAT BUTTON
+========================================================= -->
 
-<button id="aiChatButton" type="button">
-    AI SUPPORT
+<button
+    id="dylanOpenButton"
+    type="button"
+    aria-label="Open Dylan AI Assistant"
+>
+
+    <span class="dylan-button-dot"></span>
+
+    <span>
+        ASK DYLAN
+    </span>
+
 </button>
 
 
-<div id="aiChatWindow">
+<!-- =========================================================
+     DYLAN CHAT
+========================================================= -->
 
-    <div class="chat-header">
+<div
+    id="dylanChat"
+    aria-label="Dylan AI Assistant"
+>
 
-        <img
-            src="phrinusomyis_logo.png"
-            alt="PHRINUSOMYIS"
-        >
 
-        <div class="chat-header-info">
-            <strong>PHRINUSOMYIS</strong>
-            <span>GLOBAL INFORMATION ASSISTANT</span>
+    <div class="dylan-header">
+
+        <div class="dylan-identity">
+
+            <img
+                src="phrinusomyis_logo.png"
+                class="dylan-header-logo"
+                alt="PHRINUSOMYIS"
+            >
+
+            <div>
+
+                <div class="dylan-name">
+                    Dylan
+                </div>
+
+                <div class="dylan-role">
+                    PHRINUSOMYIS AI Assist
+                </div>
+
+            </div>
+
         </div>
 
-        <button id="closeChat" type="button" aria-label="Close">
+
+        <button
+            id="dylanCloseButton"
+            type="button"
+            aria-label="Close Dylan"
+        >
             ×
         </button>
 
     </div>
 
 
-    <div id="chatMessages">
-
-        <div class="message bot">
-            <div class="message-bubble">
-                Welcome to PHRINUSOMYIS. How can I help you today?
-            </div>
-        </div>
-
-    </div>
+    <div
+        id="dylanMessages"
+        aria-live="polite"
+    ></div>
 
 
-    <div id="typingIndicator" class="typing">
-        PHRINUSOMYIS is typing...
-    </div>
+    <div class="dylan-input-area">
 
+        <input
+            type="text"
+            id="dylanInput"
+            placeholder="Ask Dylan anything..."
+            autocomplete="off"
+            maxlength="2000"
+            aria-label="Message Dylan"
+        >
 
-    <!-- HUMAN SUPPORT FORM -->
-
-    <div id="agentFormBox">
-
-        <h3>Contact the PHRINUSOMYIS Team</h3>
-
-        <p>
-            Please send your name, email address and message.
-            Your request will be forwarded to our team at
-            info@phrinusomyis.com.
-        </p>
-
-        <form id="agentForm">
-
-            <div class="agent-field">
-                <label for="agentName">Name</label>
-
-                <input
-                    type="text"
-                    id="agentName"
-                    name="name"
-                    required
-                >
-            </div>
-
-
-            <div class="agent-field">
-                <label for="agentEmail">Email</label>
-
-                <input
-                    type="email"
-                    id="agentEmail"
-                    name="email"
-                    required
-                >
-            </div>
-
-
-            <div class="agent-field">
-                <label for="agentMessage">Message</label>
-
-                <textarea
-                    id="agentMessage"
-                    name="message"
-                    required
-                ></textarea>
-            </div>
-
-
-            <button id="agentSubmit" type="submit">
-                SEND MESSAGE
-            </button>
-
-            <div
-                id="agentStatus"
-                class="agent-status"
-            ></div>
-
-        </form>
+        <button
+            id="dylanSend"
+            type="button"
+        >
+            Send
+        </button>
 
     </div>
 
-
-    <div class="chat-input-area">
-
-        <div class="chat-input-row">
-
-            <textarea
-                id="chatInput"
-                placeholder="Ask PHRINUSOMYIS..."
-                rows="1"
-            ></textarea>
-
-            <button
-                id="sendChat"
-                type="button"
-            >
-                ↑
-            </button>
-
-        </div>
-
-    </div>
 
 </div>
 
 
 <script>
 
-/* =========================================================
-   SITE SEARCH
-========================================================= */
-
-const sitePages = [
-    "index.html",
-    "events.html",
-    "news.html",
-    "press.html",
-    "luxury.html",
-    "circle.html",
-    "id.html",
-    "it.html",
-    "ja.html",
-    "de.html",
-    "perfume.html",
-    "contact.html",
-    "policy.html",
-    "copyright.html",
-    "terms.html",
-    "privacy.html",
-    "security.html",
-    "fr.html",
-    "cookies.html",
-    "close.html",
-    "zh.html",
-    "hi.html",
-    "ko.html",
-    "ru.html",
-    "es.html"
-];
-
-const searchInput = document.getElementById("siteSearch");
-const searchResults = document.getElementById("searchResults");
-
-let searchIndex = [];
+document.addEventListener("DOMContentLoaded", function () {
 
 
-async function buildSearchIndex() {
+    /* =========================================================
+       1. LANGUAGE SYSTEM
+    ========================================================== */
 
-    const results = [];
+    const switcher =
+        document.getElementById("languageSwitcher");
 
-    for (const page of sitePages) {
+    if (switcher) {
 
-        try {
+        switcher.addEventListener("change", function () {
 
-            const response = await fetch(page);
-
-            if (!response.ok) {
-                continue;
-            }
-
-            const html = await response.text();
-
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, "text/html");
-
-            const title =
-                doc.querySelector("title")?.textContent ||
-                page;
-
-            const elements = doc.querySelectorAll(
-                "h1,h2,h3,p,.support-text"
+            localStorage.setItem(
+                "site_lang",
+                this.value
             );
 
-            let text = "";
+        });
 
-            elements.forEach(element => {
-                text += " " + element.textContent;
-            });
-
-            results.push({
-                page,
-                title,
-                text: text.trim()
-            });
-
-        } catch (error) {
-            console.log("Search error:", page);
-        }
-    }
-
-    searchIndex = results;
-}
-
-
-function escapeHTML(value) {
-
-    return value
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-}
-
-
-function performSearch(query) {
-
-    const cleanQuery = query.trim().toLowerCase();
-
-    if (!cleanQuery) {
-        searchResults.style.display = "none";
-        searchResults.innerHTML = "";
-        return;
-    }
-
-    const words = cleanQuery
-        .split(/\s+/)
-        .filter(Boolean);
-
-    const matches = searchIndex
-        .map(item => {
-
-            const haystack =
-                (item.title + " " + item.text).toLowerCase();
-
-            let score = 0;
-
-            words.forEach(word => {
-
-                if (haystack.includes(word)) {
-                    score++;
-                }
-
-                if (item.title.toLowerCase().includes(word)) {
-                    score += 2;
-                }
-
-            });
-
-            return {
-                ...item,
-                score
-            };
-
-        })
-        .filter(item => item.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 8);
-
-
-    if (!matches.length) {
-
-        searchResults.style.display = "block";
-
-        searchResults.innerHTML = `
-            <div class="search-result">
-                <strong>No results found</strong>
-                <span>Try another search.</span>
-            </div>
-        `;
-
-        return;
     }
 
 
-    searchResults.style.display = "block";
+    /* =========================================================
+       2. SEARCH SYSTEM
+    ========================================================== */
 
-    searchResults.innerHTML = matches.map(item => {
+    const sitePages = [
 
-        return `
-            <a
-                class="search-result"
-                href="${encodeURI(item.page)}"
-            >
-                <strong>${escapeHTML(item.title)}</strong>
-                <span>
-                    ${escapeHTML(item.text.substring(0, 180))}...
-                </span>
-            </a>
-        `;
-
-    }).join("");
-}
-
-
-searchInput.addEventListener(
-    "input",
-    () => performSearch(searchInput.value)
-);
-
-buildSearchIndex();
-
-
-/* =========================================================
-   AI CHAT
-========================================================= */
-
-const aiChatButton =
-    document.getElementById("aiChatButton");
-
-const aiChatWindow =
-    document.getElementById("aiChatWindow");
-
-const closeChat =
-    document.getElementById("closeChat");
-
-const chatMessages =
-    document.getElementById("chatMessages");
-
-const chatInput =
-    document.getElementById("chatInput");
-
-const sendChat =
-    document.getElementById("sendChat");
-
-const typingIndicator =
-    document.getElementById("typingIndicator");
-
-const agentFormBox =
-    document.getElementById("agentFormBox");
-
-const agentForm =
-    document.getElementById("agentForm");
-
-const agentStatus =
-    document.getElementById("agentStatus");
-
-
-let chatHistory = [];
-
-
-aiChatButton.addEventListener("click", () => {
-
-    aiChatWindow.style.display = "flex";
-
-    setTimeout(() => {
-        chatInput.focus();
-    }, 100);
-
-});
-
-
-closeChat.addEventListener("click", () => {
-
-    aiChatWindow.style.display = "none";
-
-});
-
-
-function addMessage(role, text) {
-
-    const wrapper =
-        document.createElement("div");
-
-    wrapper.className =
-        "message " + role;
-
-
-    const bubble =
-        document.createElement("div");
-
-    bubble.className =
-        "message-bubble";
-
-    bubble.textContent = text;
-
-
-    wrapper.appendChild(bubble);
-
-    chatMessages.appendChild(wrapper);
-
-
-    chatMessages.scrollTop =
-        chatMessages.scrollHeight;
-}
-
-
-function addBotMessage(text) {
-    addMessage("bot", text);
-}
-
-
-function addUserMessage(text) {
-    addMessage("user", text);
-}
-
-
-function wantsAgent(text) {
-
-    const lower =
-        text.toLowerCase();
-
-    const phrases = [
-
-        "speak with an agent",
-        "talk to an agent",
-        "speak to an agent",
-        "contact an agent",
-        "human support",
-        "human representative",
-        "speak with someone",
-        "speak to someone",
-        "talk to someone",
-        "talk with someone",
-        "customer service",
-        "speak with a person",
-        "talk to a person",
-        "human assistance",
-        "contact support",
-        "contact the team",
-        "speak with the team"
+        "index.html",
+        "events.html",
+        "news.html",
+        "press.html",
+        "luxury.html",
+        "circle.html",
+        "id.html",
+        "it.html",
+        "ja.html",
+        "de.html",
+        "perfume.html",
+        "contact.html",
+        "policy.html",
+        "copyright.html",
+        "terms.html",
+        "privacy.html",
+        "security.html",
+        "fr.html",
+        "cookies.html",
+        "close.html",
+        "zh.html",
+        "hi.html",
+        "ko.html",
+        "ru.html",
+        "es.html"
 
     ];
 
-    return phrases.some(
-        phrase => lower.includes(phrase)
-    );
-}
+
+    let globalKnowledgeBase = [
+
+        {
+            text: "security protocols protection",
+            original:
+                "Security protocols and protection systems.",
+            source: "SYSTEM"
+        },
+
+        {
+            text: "privacy settings data control",
+            original:
+                "Privacy settings and data control.",
+            source: "SYSTEM"
+        },
+
+        {
+            text: "ticket support events",
+            original:
+                "Ticket support and events.",
+            source: "SYSTEM"
+        }
+
+    ];
 
 
-function showAgentForm() {
+    const searchInput =
+        document.querySelector(".search-bar");
 
-    agentFormBox.style.display = "block";
+    const resultsContainer =
+        document.getElementById("searchResults");
 
-    setTimeout(() => {
-
-        agentFormBox.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest"
-        });
-
-    }, 100);
-
-}
+    const resultBox =
+        document.getElementById("resultBox");
 
 
-async function sendMessage() {
+    async function crawlSite() {
 
-    const message =
-        chatInput.value.trim();
+        for (let url of sitePages) {
 
-    if (!message) {
-        return;
+            try {
+
+                const response =
+                    await fetch(url);
+
+                if (!response.ok) {
+                    continue;
+                }
+
+                const text =
+                    await response.text();
+
+                const parser =
+                    new DOMParser();
+
+                const doc =
+                    parser.parseFromString(
+                        text,
+                        "text/html"
+                    );
+
+                const content =
+                    doc.querySelectorAll(
+                        "h1, h2, h3, p, .support-text"
+                    );
+
+
+                content.forEach(function (el) {
+
+                    const cleanText =
+                        el.innerText.trim();
+
+                    if (cleanText.length > 5) {
+
+                        globalKnowledgeBase.push({
+
+                            text:
+                                cleanText.toLowerCase(),
+
+                            original:
+                                cleanText,
+
+                            source:
+                                url
+                                    .replace(".html", "")
+                                    .toUpperCase()
+
+                        });
+
+                    }
+
+                });
+
+
+            } catch (e) {
+
+                console.warn(
+                    "Could not index: " + url
+                );
+
+            }
+
+        }
+
     }
 
 
-    addUserMessage(message);
-
-    chatInput.value = "";
-
-    chatInput.style.height = "auto";
-
-    chatHistory.push({
-        role: "user",
-        content: message
-    });
+    crawlSite();
 
 
-    if (wantsAgent(message)) {
+    if (
+        searchInput &&
+        resultBox &&
+        resultsContainer
+    ) {
 
-        addBotMessage(
-            "Of course. If you would like to speak with a member of the PHRINUSOMYIS team, please send your name, email address and message below. Your request will be forwarded to our team at info@phrinusomyis.com."
+        searchInput.addEventListener(
+            "input",
+            function () {
+
+                const query =
+                    this.value
+                        .toLowerCase()
+                        .trim();
+
+
+                if (query.length < 2) {
+
+                    resultsContainer.style.display =
+                        "none";
+
+                    return;
+
+                }
+
+
+                let matches =
+                    globalKnowledgeBase.filter(
+                        function (item) {
+
+                            return item.text.includes(
+                                query
+                            );
+
+                        }
+                    );
+
+
+                if (matches.length > 0) {
+
+
+                    const uniqueResults =
+                        [
+                            ...new Map(
+                                matches.map(
+                                    function (m) {
+
+                                        return [
+                                            m.original,
+                                            m
+                                        ];
+
+                                    }
+                                )
+                            ).values()
+                        ];
+
+
+                    resultBox.innerHTML =
+                        uniqueResults
+                            .slice(0, 6)
+                            .map(function (match) {
+
+                                return `
+
+                                    <div style="
+                                        margin-bottom:15px;
+                                        padding:15px;
+                                        border-left:2px solid #D4AF37;
+                                        background:rgba(255,255,255,0.03);
+                                    ">
+
+                                        <span style="
+                                            display:block;
+                                            font-size:9px;
+                                            color:#D4AF37;
+                                            letter-spacing:2px;
+                                            text-transform:uppercase;
+                                            margin-bottom:8px;
+                                        ">
+
+                                            ARCHIVE:
+                                            ${escapeHtml(match.source)}
+
+                                        </span>
+
+
+                                        <p style="
+                                            color:#ffffff;
+                                            margin:0;
+                                            font-size:14px;
+                                            line-height:1.5;
+                                        ">
+
+                                            ${escapeHtml(match.original)}
+
+                                        </p>
+
+                                    </div>
+
+                                `;
+
+                            })
+                            .join("");
+
+
+                } else {
+
+
+                    resultBox.innerHTML = `
+
+                        <div style="
+                            padding:20px;
+                            color:#444;
+                            text-align:center;
+                        ">
+
+                            NO DATA MATCHES IN
+                            BROOKLYN ARCHIVES
+
+                        </div>
+
+                    `;
+
+                }
+
+
+                resultsContainer.style.display =
+                    "block";
+
+            }
         );
 
-        showAgentForm();
-
-        return;
     }
 
 
-    sendChat.disabled = true;
+    /* =========================================================
+       SEARCH HTML PROTECTION
+    ========================================================== */
 
-    typingIndicator.style.display = "block";
+    function escapeHtml(value) {
 
+        return String(value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
 
-    try {
-
-        const response =
-            await fetch("api/chat.php", {
-
-                method: "POST",
-
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                body: JSON.stringify({
-                    message: message,
-                    history: chatHistory.slice(-12)
-                })
-
-            });
+    }
 
 
-        const data =
-            await response.json();
+    /* =========================================================
+       3. DYLAN AI ASSISTANT
+    ========================================================== */
 
 
-        if (!response.ok) {
+    /*
+       IMPORTANT:
 
-            throw new Error(
-                data.error ||
-                "Unable to connect to the assistant."
+       Replace this URL with your Cloudflare Worker URL.
+
+       Example:
+
+       https://phrinusomyis-dylan.yourname.workers.dev
+    */
+
+    const DYLAN_API_URL =
+        "https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev";
+
+
+    const dylanOpenButton =
+        document.getElementById("dylanOpenButton");
+
+    const dylanCloseButton =
+        document.getElementById("dylanCloseButton");
+
+    const dylanChat =
+        document.getElementById("dylanChat");
+
+    const dylanMessages =
+        document.getElementById("dylanMessages");
+
+    const dylanInput =
+        document.getElementById("dylanInput");
+
+    const dylanSend =
+        document.getElementById("dylanSend");
+
+
+    /*
+       Conversation memory for the current
+       browser session.
+    */
+
+    let dylanConversation = [];
+
+    let dylanBusy = false;
+
+
+    /* =========================================================
+       OPEN CHAT
+    ========================================================== */
+
+    function openDylan() {
+
+        dylanChat.style.display =
+            "flex";
+
+        dylanInput.focus();
+
+
+        if (
+            dylanMessages.children.length === 0
+        ) {
+
+            addDylanMessage(
+
+                "assistant",
+
+                "Welcome to PHRINUSOMYIS. I'm Dylan. How can I help you today?"
+
             );
 
         }
 
-
-        const reply =
-            data.reply ||
-            "I'm sorry, I couldn't process that request.";
+    }
 
 
-        addBotMessage(reply);
+    /* =========================================================
+       CLOSE CHAT
+    ========================================================== */
+
+    function closeDylan() {
+
+        dylanChat.style.display =
+            "none";
+
+    }
 
 
-        chatHistory.push({
-            role: "assistant",
-            content: reply
+    dylanOpenButton.addEventListener(
+        "click",
+        openDylan
+    );
+
+
+    dylanCloseButton.addEventListener(
+        "click",
+        closeDylan
+    );
+
+
+    /* =========================================================
+       ADD MESSAGE
+    ========================================================== */
+
+    function addDylanMessage(
+        role,
+        text
+    ) {
+
+        const row =
+            document.createElement("div");
+
+        row.className =
+            "dylan-message-row " +
+            role;
+
+
+        const message =
+            document.createElement("div");
+
+        message.className =
+            "dylan-message " +
+            role;
+
+
+        /*
+           textContent is intentional.
+           It prevents HTML/script injection.
+        */
+
+        message.textContent =
+            text;
+
+
+        row.appendChild(message);
+
+        dylanMessages.appendChild(row);
+
+
+        dylanMessages.scrollTop =
+            dylanMessages.scrollHeight;
+
+
+        return row;
+
+    }
+
+
+    /* =========================================================
+       TYPING INDICATOR
+    ========================================================== */
+
+    function addTypingIndicator() {
+
+        const row =
+            document.createElement("div");
+
+        row.className =
+            "dylan-message-row assistant";
+
+
+        const message =
+            document.createElement("div");
+
+        message.className =
+            "dylan-message assistant";
+
+
+        message.innerHTML = `
+
+            <div class="dylan-typing">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        `;
+
+
+        row.appendChild(message);
+
+        dylanMessages.appendChild(row);
+
+
+        dylanMessages.scrollTop =
+            dylanMessages.scrollHeight;
+
+
+        return row;
+
+    }
+
+
+    /* =========================================================
+       SEND MESSAGE
+    ========================================================== */
+
+    async function sendDylanMessage() {
+
+
+        if (dylanBusy) {
+            return;
+        }
+
+
+        const message =
+            dylanInput.value.trim();
+
+
+        if (!message) {
+            return;
+        }
+
+
+        dylanBusy = true;
+
+        dylanSend.disabled = true;
+
+        dylanInput.disabled = true;
+
+
+        addDylanMessage(
+            "user",
+            message
+        );
+
+
+        dylanConversation.push({
+
+            role: "user",
+
+            content: message
+
         });
 
 
-    } catch (error) {
-
-        console.error(error);
-
-        addBotMessage(
-            "I'm sorry, there was a problem connecting to the PHRINUSOMYIS information assistant. Please try again."
-        );
-
-    } finally {
-
-        typingIndicator.style.display = "none";
-
-        sendChat.disabled = false;
-
-        chatInput.focus();
-
-    }
-
-}
+        dylanInput.value = "";
 
 
-sendChat.addEventListener(
-    "click",
-    sendMessage
-);
-
-
-chatInput.addEventListener(
-    "keydown",
-    event => {
-
-        if (
-            event.key === "Enter" &&
-            !event.shiftKey
-        ) {
-
-            event.preventDefault();
-
-            sendMessage();
-
-        }
-
-    }
-);
-
-
-chatInput.addEventListener(
-    "input",
-    () => {
-
-        chatInput.style.height = "auto";
-
-        chatInput.style.height =
-            Math.min(
-                chatInput.scrollHeight,
-                110
-            ) + "px";
-
-    }
-);
-
-
-/* =========================================================
-   HUMAN CONTACT FORM
-========================================================= */
-
-agentForm.addEventListener(
-    "submit",
-    async event => {
-
-        event.preventDefault();
-
-
-        const formData =
-            new FormData(agentForm);
-
-
-        const submitButton =
-            document.getElementById("agentSubmit");
-
-
-        submitButton.disabled = true;
-
-        submitButton.textContent =
-            "SENDING...";
-
-
-        agentStatus.style.display =
-            "none";
+        const typing =
+            addTypingIndicator();
 
 
         try {
 
+
             const response =
                 await fetch(
-                    "api/contact-agent.php",
+                    DYLAN_API_URL,
                     {
+
                         method: "POST",
-                        body: formData
+
+                        headers: {
+
+                            "Content-Type":
+                                "application/json"
+
+                        },
+
+                        body: JSON.stringify({
+
+                            messages:
+                                dylanConversation.slice(-30)
+
+                        })
+
                     }
                 );
 
 
-            const data =
-                await response.json();
+            let data = null;
+
+
+            try {
+
+                data =
+                    await response.json();
+
+            } catch (jsonError) {
+
+                data = null;
+
+            }
+
+
+            typing.remove();
 
 
             if (!response.ok) {
 
                 throw new Error(
-                    data.error ||
-                    "Unable to send message."
+                    data &&
+                    data.error
+                        ? data.error
+                        : "Dylan could not connect."
                 );
 
             }
 
 
-            agentStatus.style.display =
-                "block";
-
-            agentStatus.style.color =
-                "#D4AF37";
-
-            agentStatus.textContent =
-                "Your message has been sent to the PHRINUSOMYIS team.";
+            const answer =
+                data &&
+                typeof data.answer === "string"
+                    ? data.answer.trim()
+                    : "";
 
 
-            agentForm.reset();
+            if (!answer) {
+
+                throw new Error(
+                    "No response received."
+                );
+
+            }
+
+
+            addDylanMessage(
+                "assistant",
+                answer
+            );
+
+
+            dylanConversation.push({
+
+                role: "assistant",
+
+                content: answer
+
+            });
 
 
         } catch (error) {
 
-            agentStatus.style.display =
-                "block";
 
-            agentStatus.style.color =
-                "#ff7777";
+            typing.remove();
 
-            agentStatus.textContent =
-                error.message ||
-                "Unable to send your message. Please try again.";
 
-        } finally {
+            console.error(
+                "Dylan error:",
+                error
+            );
 
-            submitButton.disabled =
-                false;
 
-            submitButton.textContent =
-                "SEND MESSAGE";
+            addDylanMessage(
+
+                "assistant",
+
+                "I'm having trouble connecting right now. Please try again in a moment. If you need to contact the PHRINUSOMYIS team directly, email info@phrinusomyis.com with your name, phone number, and message."
+
+            );
 
         }
 
+
+        dylanBusy = false;
+
+        dylanSend.disabled = false;
+
+        dylanInput.disabled = false;
+
+        dylanInput.focus();
+
     }
-);
+
+
+    /* =========================================================
+       SEND BUTTON
+    ========================================================== */
+
+    dylanSend.addEventListener(
+        "click",
+        sendDylanMessage
+    );
+
+
+    /* =========================================================
+       ENTER KEY
+    ========================================================== */
+
+    dylanInput.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Enter" &&
+                !event.shiftKey
+            ) {
+
+                event.preventDefault();
+
+                sendDylanMessage();
+
+            }
+
+        }
+    );
+
+
+});
 
 </script>
 
 </body>
+
 </html>
